@@ -12,6 +12,7 @@
 |-------------------|----------------------------|-----------------|----|
 |Avg time taken by step/form in core submission flow|Potentially identify which steps take the longest time and focus efforts to reduce that time|Rakshinda|Feb 2023|
 |Statistical distribution of claim submission time|Get a better understanding of baseline as averages are wrong on average and few outliers can skew the average|Rakshinda|Feb 2023|
+|Average number and type of evidence submitted for succesful claims|Get a better understanding of baseline to help set expectations for veterans|Nyantee|Feb 2023|
 
 ### Later
 |What I want to know|How this will inform my work|Who wants to know|Date|

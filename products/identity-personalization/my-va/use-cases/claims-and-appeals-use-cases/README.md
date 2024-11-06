@@ -1,10 +1,10 @@
 # My VA: Claims and Appeals Use Cases
 
-**Last updated:** April 13, 2023
+**Last updated:** August 1, 2023
 
 - This feature on My VA gives the user a status update on any open or recently closed claims (within the last 60 days) and links them to the claims tool to see more details. 
-- This feature also contains a link to the claims tool to manage all claims and appeals and for users who do not have any recent claims to show, it provides a link for them to learn more about filing claims.
-- For all of these use cases, the user must be LOA3 (identity verified). All LOA3 users will see this section on My VA.
+- This feature also contains a link to the claims tool to manage all claims and appeals and a link for them to learn more about filing claims.
+- For all use cases, the user must be LOA3 (identity verified). All LOA3 users will see this section on My VA.
 - [LOA1 users](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/identity-personalization/my-va/use-cases/LOA1-use-cases) will not see this section on My VA.
 
 ## Common use cases
@@ -21,4 +21,4 @@ There are no flags associated with this feature.
 - [The claims API is down and we can’t display any claims or appeals information](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/my-va/use-cases/claims-and-appeals-use-cases/claims-api-down.md)
 
 ## Flow diagrams
-- [User flow for claims and appeals on My VA](https://www.sketch.com/s/9b0e6efc-423a-4354-9db3-ab2083d566c9/p/4444BC2A-797F-4000-A125-31B83F7E817F/canvas)
+- [User flow for claims and appeals on My VA](https://www.figma.com/file/15yOY4VEzitxm5tRMDiAzz/My-VA?type=design&node-id=0-7177&mode=design)

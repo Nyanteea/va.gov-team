@@ -2,10 +2,8 @@
 
 ---
 
-
-- [Mural flow](https://app.mural.co/t/adhoccorporateworkspace2583/m/adhoccorporateworkspace2583/1632923531828/474bfdde942c22a0df26ad416a0b23e36b834d4a?sender=u6ad375c1c8425e5bfec67027) - OUTDATED (can't update will move to VA Mural instance)
-- [VA Mural flow](https://app.mural.co/t/departmentofveteransaffairs9999/m/departmentofveteransaffairs9999/1682696116933/9352d9dbbe6d6aa9a05eddcac8c82521512d9795?sender=uadf1ed7fe7c76f0914967329)
-- [Sketch wireflows](https://www.sketch.com/s/da85cf44-4503-4e98-834e-ff068b242ef6/a/DPjA4ba)
+- [VA Mural flow](https://app.mural.co/t/departmentofveteransaffairs9999/m/departmentofveteransaffairs9999/1711487613901/3f988d8dd69c59340e4b850ef5caf362fa490927?sender=uadf1ed7fe7c76f0914967329)
+- [Figma wireflow - PENDING UPDATE](https://www.figma.com/file/UljiHam46o5DItC5iDgmPd/10-10EZ?type=design&node-id=0-6&mode=design&t=DlVyBuMijvoU6rw6-0)
 
 --- 
 
@@ -68,16 +66,17 @@ Pages listed below
 [p] Here’s what you’ll need to apply:
 
 [ul]
-- **Social Security numbers** for you, your spouse, and your qualified dependents
-- **Your military discharge information.** If you sign in to apply, we may be able to fill in this information for you. If you don’t sign in to apply, we’ll ask you to upload a copy of your DD214 or other separation documents.**
-- **Insurance cards** for all health insurance companies that cover you. This includes any coverage that you get through a spouse or significant other. This also includes Medicare, private insurance, or insurance from your employer. 
+- **Social security numbers** for you, your spouse (if you're married), and any dependents you may have.
+- **Insurance card information** for all health insurance companies that cover you. This includes coverage that you get through a spouse or significant other. This also includes Medicare, private insurance, or insurance from your employer.
 [end ul]
 
-[p] We’ll also ask you for this optional information:
+[p] You can also provide this information:
 
 [ul]
-- **Last year's gross household income** for you, your spouse, and your dependents. This includes income from a job and any other sources. Gross household income is your income before taxes and any other deductions.
-- **Your deductible expenses for the past year.** These include certain health care and education costs. These expenses will lower the amount of money we count as your income.
+- **Your military service history information** and details about exposure to toxins or hazards. 
+- **A copy of your DD214 or other separation documents.** If you sign in to apply, may be able to fill in your military service history information for you. If you don’t sign in to apply, you can upload a copy of your DD214 or other separation documents. 
+- **Income information** for you, your spouse, or any dependents you may have. This includes income from a job and any other sources.
+- **Deductible expenses** (expenses that you can subtract from your income) for you and your spouse. These expenses will lower the amount of money we count as income.
 [end ul]
 
 
@@ -108,7 +107,7 @@ Pages listed below
 
 
 [h3 class h4] 3. Start your application
-[p] We’ll take you through each step of the process. It should take about 30 minutes.
+[p] We’ll take you through each step of the process. It should take about 35 minutes.
 
 [component additional info]
 [title] What happens after I apply? 
@@ -133,7 +132,7 @@ Pages listed below
 [END component alert info]
 
 [component OMB info]
-How much time we think you'll need to apply (called respondent burden): **30 minutes**
+How much time we think you'll need to apply (called respondent burden): **35 minutes**
 OMB Control #: 2900-0091
 Expiration date: 06/30/2024
 [END component OMB info]
@@ -161,21 +160,83 @@ Expiration date: 06/30/2024
 
 [h1] We need some information before you can start your application
 
-[p] This will help us fit the application to your specific needs. Please fill out the form below. Then we’ll take you to the VA health care application (10-10EZ).
+- [p] We need some information before you can start your application. This will help us fit your application to your specific needs.
+- [p] Then you can fill out the VA health care application (10-10EZ).
 
-[p bold] Want to skip this step?
-[a] Sign in to start your application.
+- [p bold] Sign in and save time
+- [p] You can sign in and confirm that the information we have for you is up to date and then fill out the VA health care application. 
+- [a] Sign in to start your application.
 
 [component text input label] First name (*Required)
 
+[component form text input label] Your middle name
+
 [component text input label] Last name (*Required)
 
+[component form text input label] Suffix (dropdown) Jr. Sr. II III IV
+
 [label] Date of birth (*Required)
-Month Day Year (dropdowns)
+- Month Day Year (dropdowns)
 
 [component text input label] Social Security number(*Required)
 
 [button primary] [Continue to the application>>]
+
+
+
+
+---
+## Introduction Page Content Variations - ES Status
+---
+
+[Need to update per 3/5/2024 changes]
+### Status Codes to FAQ Blocks
+
+| Status                                                              | FAQ Block IDs                           |
+| ------------------------------------------------------------------- | --------------------------------------- |
+| activeDuty                                                          | General8                                |
+| canceledDeclined<br>closed                                          | General5, General11, Reapply4           |
+| deceased                                                            | N/A                                     |
+| enrolled                                                            | General1, Reapply1                      |
+| ineligCHAMPVA                                                       | General4, Reapply2                      |
+| ineligCharacterOfDischarge                                          | General2, General9, General11, Reapply2 |
+| ineligCitizens<br>ineligFilipinoScouts                              | General2, Reapply2                      |
+| ineligFugitiveFelon                                                 | General5, Reapply2                      |
+| ineligGuardReserve<br>ineligNotEnoughTime<br>ineligTrainingOnly     | General2, General11, Reapply2           |
+| ineligMedicare<br>ineligOther<br>ineligOver65<br>ineligRefusedCopay | General5, General11, Reapply2           |
+| ineligNotVerified                                                   | General3, General11, Reapply2           |
+| nonMilitary                                                         | General10                               |
+| pendingMt<br>pendingPurpleHeart                                     | General6, Reapply5                      |
+| pendingOther<br>pendingUnverified                                   | General7, Reapply6                      |
+| rejectedIncWrongEntry<br>rejectedRightEntry<br>rejectedScWrongEntry | General5, General11, Reapply3           |
+
+
+
+### Block Content
+
+| Block ID  | FAQ Content                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| General1  | [h2] How can I change my address, income, or other information in my VA health care records?<br>[p] To update your information, please submit a Health Benefits Update Form (VA Form 10-10EZR).<br>[link to health-care/update-health-information] Find out how to submit VA Form 10-10EZR<br>[p] Or you can update your address and other contact information in your VA.gov profile. This will update your information across several VA benefits and services.<br>[link to /profile/contact-information] Go to your profile to update your address                                                                                                                                                                                                                                                                                                                        |
+| General2  | [h2] What should I do if I think this information is incorrect, or if I have questions about my eligibility?<br>[p] Please call our enrollment case management team at [222-VETS]. We’re here Monday through Friday, 8:00 a.m. to 8:00 p.m. ET                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| General3  | [h2] What should I do if I want to submit proof of my military service, or if I have questions about my eligibility?<br>[p] Please call our enrollment case management team at [222-VETS]. We’re here Monday through Friday, 8:00 a.m. to 8:00 p.m. ET                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| General4  | [h2] Do any VA medical centers treat CHAMPVA recipients?<br>[p] Yes. To learn more about VA medical centers that offer services to CHAMPVA recipients, or if you have any other questions, please call our enrollment case management team at [222-VETS]. We’re here Monday through Friday, 8:00 a.m. to 8:00 p.m. ET                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| General5  | [h2] What should I do if I have questions about my eligibility?<br>[p] Please call our enrollment case management team at [222-VETS]. We’re here Monday through Friday, 8:00 a.m. to 8:00 p.m. ET                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| General6  | [h2] How do I submit this information to VA?<br>[p] Please call our enrollment case management team at [222-VETS] for directions on how to submit your information. We’re here Monday through Friday, 8:00 a.m. to 8:00 p.m. ET                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| General7  | [h2] How will I know if VA needs more information from me to verify my military service?<br>[p] If we need more information, we’ll send you a letter in the mail. If you have any questions, please call our enrollment case management team at [222-VETS]. We’re here Monday through Friday, 8:00 a.m. to 8:00 p.m. ET                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| General8  | [h2] Can I apply for VA health care?<br>[p] As an active-duty service member, you can apply for VA health care if both of the below descriptions are true for you.<br>[p] Both of these must be true:<br>[ul]<br>[li] You’ve received your separation orders, and<br>[li] You have less than a year until your separation date<br>[p] If you don’t meet the requirements listed above<br>[p] Please don’t apply at this time. We welcome you to apply once you meet these requirements.<br>[p] If you’ve already applied, think you’ve received this message in error, or have any questions<br>[p] Please call our enrollment case management team at [222-VETS]. We’re here Monday through Friday, 8:00 a.m. to 8:00 p.m. ET                                                                                                                                               |
+| General9  | [h2] What if I want to review my discharge status, or think I may qualify for an upgrade?<br>[p] You can get more information on our website:<br>[link to discharge-upgrade-instructions/] Find out who may qualify for a discharge upgrade<br>[link to discharge-upgrade-instructions/#other-options] Learn more about the Character of Discharge review process                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| General10 | [h2] Can I apply for VA health care?<br>[p] The health care application on this page is only for Veterans or service members who have received their separation orders and are within one year of their separation. If you are a family member or caregiver submitting a health care application on behalf of a Veteran or service member, then you can use this tool to help get them VA health care.<br>[p] If you’re not helping a Veteran or service member sign up, you may be eligible for your own VA health care benefits.<br>[link to health-care/family-caregiver-benefits] Learn about health care for spouses, dependents, and family caregivers<br>[p] Note: If you are a Veteran or service member receiving this message in error, please call our enrollment case management team at [222-VETS]. We’re here Monday through Friday, 8:00 a.m. to 8:00 p.m. ET |
+| General11 | [h2] Can I still get mental health care?<br>[p] You may still be able to access certain mental health care services even if you’re not enrolled in VA health care.<br>[link to health-care/health-needs-conditions/mental-health/] Learn more about getting started with VA mental health services                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Reapply1  | [h2] Will applying again update my information?<br>[p] No. A new application won’t update your information. If you have questions about the information we have on record for you, please call your nearest VA medical center.<br>[button link to /find-locations/] Find your VA medical center                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Reapply2  | [h2] Could applying again change VA’s decision?<br>[p] A new application most likely won’t change our decision on your eligibility. If you’d like to talk about your options, please call our enrollment case management team at [222-VETS].<br>[p] We only recommend applying again if you’ve already worked with our enrollment case management team, and they’ve advised you to reapply.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Reapply3  | [h2] Could applying again change VA’s decision?<br>[p] Only if you’ve had a change in your life since you last applied that may make you eligible for VA health care now—like receiving a VA rating for a service-connected disability or experiencing a decrease in your income. If you’d like to talk about your options, please call our enrollment case management team at [222-VETS].<br>[p] We only recommend applying again if you’ve already worked with our enrollment case management team, and they’ve advised you to reapply.                                                                                                                                                                                                                                                                                                                                    |
+| Reapply4  | [h2] Can I apply again?<br>[p] Yes. If you have questions about how to complete your application, please call our enrollment case management team at [222-VETS].                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Reapply5  | [h2] Should I just submit a new application with all my information?<br>[p] No. We’re in the process of reviewing your current application, and submitting a new application won’t affect our decision. To get help providing the information we need to complete our review, please call our enrollment case management team at [222-VETS].<br>[p] We only recommend applying again if you’ve already worked with our enrollment case management team, and they’ve advised you to reapply.                                                                                                                                                                                                                                                                                                                                                                                  |
+| Reapply6  | [h2] Should I apply again?<br>[p] No. We’re in the process of reviewing your current application, and submitting a new application won’t affect our decision. If you’d like to talk about your current application, please call our enrollment case management team at [222-VETS].<br>[p] We only recommend applying again if you’ve already worked with our enrollment case management team, and they’ve advised you to reapply.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+
+
+
 
 
 ---
@@ -183,7 +244,7 @@ Month Day Year (dropdowns)
 ---
 
 
-### Page: Veteran’s Name
+### Page: Personal Information - Unauthenticated View
 
 #### URL: /health-care/apply/application/veteran-information/profile-information
 
@@ -191,50 +252,39 @@ Month Day Year (dropdowns)
 [h2] Step 1 of 6: Veteran Information
 [end progress bar]
 
-[p] You don’t have to fill in all these fields. But we can review your application faster if you provide more information.
+[p] Confirm your information before you continue.
 
-[component form text input label] Your first name (*Required)
+[read only block]
+- [p bold] Name
+- Social Security number: xxx-xx-{last 4 of SSN}
+- Date of Birth: Month day, year
 
-[component form text input label] Your middle name
-
-[component form text input label] Your last name (*Required)
-
-[component form text input label] Suffix (dropdown) Jr. Sr. II III IV
 
 [button pair] [<< Back] [Continue >>]
 
 
----
-
-### Page: Social Security number
-
-#### URL: /health-care/apply/application/veteran-information/profile-information-ssn
+### Page: Veteran's Profile - AUTHENTICATED View
 
 [component progress bar]
 [h2] Step 1 of 6: Veteran Information
+[p] We’ll save your application on every change.
 [end progress bar]
 
-[component text input label] Social Security number (*Required)
+
+[p] This is the personal information we have on file for you.
+
+[read only block]
+- [p bold] Name
+- Social Security number: xxx-xx-{last 4 of SSN}
+- Date of Birth: Month day, year
+
+[p][bold]Note:[end bold] If you need to update your personal information, call our VA benefits hotline at 800-827-1000 (TTY: 711), Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.
+[p] You can also call your VA medical center (find a VA location tool) to get help changing your name on file with VA. Ask for the eligibility department.
+
+
 
 [button pair] [<< Back] [Continue >>]
 
-
----
-
-### Page: Date of birth
-
-#### URL: /health-care/apply/application/veteran-information/profile-information-dob
-
-
-[component progress bar]
-[h2] Step 1 of 6: Veteran Information
-[end progress bar]
-
-[component date label] Date of birth (*Required)
-
-[dropdowns for: month, day] [ input for year]
-
-[button pair] [<< Back] [Continue >>]
 
 
 ---
@@ -577,247 +627,1069 @@ Month Day Year (dropdowns)
 - Served in combat theater of operations after November 11, 1998
 - Discharged or retired from the military for a disability incurred in the line of duty
 - Served in Southwest Asia during the Gulf War between August 2, 1990, and Nov 11, 1998
-- Served in Vietnam between January 9, 1962, and May 7, 1975
-- Exposed to radiation while in the military
-- Received nose/throat radium treatments while in the military
-- Served on active duty at least 30 days at Camp Lejeune from January 1, 1953, through December 31, 1987
+
+[button pair] [<< Back] [Continue >>]
+
+
+### Page: Toxic Exposure Opt in/out
+
+#### URL: health-care/apply/application/military-service/toxic-exposure
+
+[title h3] Toxic exposure
+
+Next we’ll ask you more questions about your military service history.
+
+It’s your choice whether you want to answer these questions. Before you decide, here’s what you should know about how we’ll use this information.
+
+This will help us determine if you may have had exposure to any toxins or other hazards in either of these ways:
+
+- While deployed to certain areas linked to exposures like Agent Orange, burn pits, radiation, or contaminated water
+- By working with chemicals, pesticides, lead, asbestos, certain paints, nuclear weapons, x-rays, or other toxins during training or active duty service
+  
+We’ll also determine if you’re more likely to get VA health care benefits. We call this "enhanced eligibility status."
+
+[additional info component] 
+[title] Learn more about enhanced eligibility status for VA health care
+[content] 
+You may qualify for enhanced eligibility status if you receive any of these benefits:
+
+- VA pension
+- VA service-connected disability compensation
+- Medicaid benefits
+
+You may also qualify for enhanced eligibility status if you fit one of these descriptions:
+
+- You’re a former Prisoner of War (POW).
+- You received a Purple Heart.
+- You received a Medal of Honor.
+- You served in Southwest Asia during the Gulf War between August 2, 1990, and November 11, 1998.
+- You were exposed to toxins or hazards by working with chemicals, pesticides, lead, asbestos, certain paints, nuclear weapons, x-rays, or other toxins. This exposure could have happened while training or serving on active duty, even if you were never deployed.
+- You served at least 30 days at Camp Lejeune between August 1, 1953, and December 31, 1987.
+- You served in a location where you had exposure to Agent Orange during the Vietnam War era.
+
+[label] Do you want to answer questions about your military service history and exposure to any toxins or other hazards?(*Required)
+
+[radio buttons]
+- Yes
+- No
+
+
+### Page: Toxic Exposure Radiation
+
+#### URL: health-care/apply/application/military-service/radiation-cleanup-efforts
+
+[title h3] Cleanup or response efforts
+
+[label] Did you take part in any of these cleanup or response efforts?
+- The cleanup of Hiroshima and Nagasaki or Enewetak Atoll
+- The cleanup of an Air Force B-52 bomber carrying nuclear weapons off the coast of Palomares, Spain
+- The response to the fire onboard an Air Force B-52 bomber carrying nuclear weapons near Thule Air Force Base in Greenland
+
+
+[radio buttons]
+- Yes
+- No
+
+
+### Page: Toxic Exposure Gulf War Service
+
+#### URL: health-care/apply/application/military-service/gulf-war-service
+
+[title h3] Service in Gulf War locations
+
+[label] Did you serve in any of these Gulf War locations?
+- Afghanistan
+- Arabian Sea
+- Bahrain
+- Djibouti
+- Egypt
+- Gulf of Aden
+- Gulf of Oman
+- Iraq
+- Israel
+- Jordan
+- Kuwait
+- Lebanon
+- Neutral zone between Iraq and Saudi Arabia
+- Oman
+- Persian Gulf
+- Qatar
+- Red Sea
+- Saudi Arabia
+- Somalia
+- Syria
+- Turkey
+- United Arab Emirates
+- Uzbekistan
+- Yemen
+
+[radio buttons]
+- Yes
+- No
+
+
+### Page: Toxic Exposure Gulf War Service Dates
+
+#### URL: health-care/apply/application/military-service/gulf-war-service-dates
+ 
+[title h3] Service dates for Gulf War locations
+[p] Enter any date range you served in a Gulf War location. You don’t need to have exact dates.
+
+[label] Service start date
+[hint text] If you don’t know the exact date, enter your best guess
+[input select] Month [input text] Year
+
+[label] Service end date
+[hint text] If you don’t know the exact date, enter your best guess
+[input select] Month [input text] Year
+
+[additional info component]
+[title] What if I have more than one date range?
+[content] 
+You only need to enter one date range. We’ll use this information to find your record.
+
+
+### Page: Toxic Exposure Operations
+
+#### URL: health-care/apply/application/military-service/operation-support
+
+
+[title h3] Operations
+[label] Were you deployed in support of any of these operations?
+- Enduring Freedom
+- Freedom’s Sentinel
+- Iraqi Freedom
+- New Dawn
+- Inherent Resolve
+- Resolute Support Mission
+
+[radio buttons]
+- Yes
+- No
+
+
+### Page: Toxic Exposure Agent Orange
+
+#### URL: health-care/apply/application/military-service/agent-orange-exposure
+
+[title h3] Agent Orange locations
+
+[label] Did you serve in any of these locations where the military used the herbicide Agent Orange?
+- Cambodia at Mimot or Krek, Kampong Cham Province
+- Guam, American Samoa, or their territorial waters
+- In or near the Korean demilitarized zone
+- Johnston Atoll or on a ship that called at Johnston Atoll
+- Laos
+- Any location where you had contact with C-123 airplanes while serving in the Air Force or the Air Force Reserves
+- A U.S. or Royal Thai military base in Thailand
+- Vietnam or the waters in or off of Vietnam
+
+[radio buttons]
+- Yes
+- No
+
+
+
+### Page: Toxic Exposure Other
+
+#### URL: health-care/apply/application/military-service/other-toxic-exposure
+
+[title] Other toxic exposures
+
+[label] Have you been exposed to any of these toxins or hazards? Check any that you’ve been exposed to.
+
+[checkboxes]
+- Air pollutants (like burn pits, sand, oil wells, or sulfur fires)
+- Asbestos
+- Chemicals (like pesticides, herbicides, or contaminated water)
+- Contaminated Water at Camp Lejeune
+- Mustard gas
+- Occupational hazards (jet fuel, industrial solvents, lead, firefighting foams)
+- Radiation
+- SHAD (Shipboard Hazard and Defense)
+- Warfare agents (like nerve agents or chemical and biological weapons)
+- Other toxins or hazards not listed here
+
+
+### Page: Toxic Exposure Other Specify [Conditional Page, if Other selected]
+
+#### URL: health-care/apply/application/military-service/other-toxins-or-hazards
+
+[title h3] Other toxic exposure
+
+[p]You selected that you were exposed to other toxins or hazards.
+
+[link]Learn more about exposures on our Public Health website (opens in new tab)
+[url] https://www.publichealth.va.gov/exposures/index.asp
+
+
+[label] Enter any toxins or hazards you’ve been exposed to
+
+
+
+
+### Page: Toxic Exposure Other Dates [Conditional Page, if any selected]
+
+#### URL: health-care/apply/application/military-service/other-toxic-exposure-dates
+
+
+
+[title h3] Dates of exposure
+[p] Enter any date range when you were exposed to other toxins or hazards. You don’t need to have exact dates.
+
+
+[label] Exposure start date
+[hint text] If you don’t know the exact date, enter your best guess
+[input select] Month [input text] Year
+
+[label] Exposure end date
+[hint text] If you don’t know the exact date, enter your best guess
+[input select] Month [input text] Year
+
+[additional info component]
+[title] What if I have more than one date range?
+[content] 
+You only need to enter one date range. We’ll use this information to find your record.
+
+
+
+
+
+
+  
+---
+## Step 4 Household information 
+
+---
+
+**Section: Introduction/disclose financials**
+
+---
+
+#### Page: Financial introduction page
+#### URL: health-care/apply/application/household-information-v2/financial-information-use
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+
+
+[p] Next we'll ask about your household financial information from 2022. We’ll ask about income and expenses for you, your spouse (if you’re married), and any dependents you may have.
+
+[h3] How we use your household financial information  
+
+[p] It’s your choice whether you want to share your financial information. Before you decide, here’s what to know about how we’ll use your financial information. 
+
+[p]{bold}   We use your financial information to determine these factors: 
+
+[ul]
+**If you’re eligible for VA health care based on your income.** You may be eligible based on factors other than your income. We call these “enhanced eligibility status” factors. If you don’t have one of these factors, we’ll use your income to decide if you’re eligible. 
+**If you’re eligible for travel pay reimbursement.** Reimbursement means we pay you back for the cost of travel to and from your VA health appointments. 
+**If you’ll need to pay a copay for non-service-connected care or prescription medicines.** This means you may need to pay a fixed amount for some types of care or medications you receive from a VA health care provider or an approved community care provider.
+
+[/end ul]
+
+[p] **Note:** We verify the financial information you provide with the Internal Revenue Service (IRS).  
+
+[component additional info]
+
+[label] Learn more about enhanced eligibility status for VA health care
+
+[content]
+
+[p] **You may qualify for enhanced eligibility status if you receive any of these benefits:**  
+
+[ul]
+- VA pension 
+- VA service-connected disability compensation 
+- Medicaid benefits
+[END ul]
+
+[p] **You may also qualify for enhanced eligibility status if you fit one of these descriptions:**
+[ul]
+- You’re a former Prisoner of War (POW).
+- You received a Purple Heart.
+- You received a Medal of Honor.
+- You served in Southwest Asia during the Gulf War between August 2, 1990, and November 11, 1998.
+- You were exposed to toxins or hazards by working with chemicals, pesticides, lead, asbestos, certain paints, nuclear weapons, x-rays, or other toxins. This exposure could have happened while training or serving on active duty, even if you were never deployed.
+- You served at least 30 days at Camp Lejeune between August 1, 1953, and December 31, 1987.
+- You served in a location where you had exposure to Agent Orange during the Vietnam War era.
+
+
+[END ul]
+[End Additional Info Component]
+
+[button pair] [<< Back] [Continue >>]
+
+---
+
+
+#### Page: Financial disclosure select
+#### URL: health-care/apply/application/household-information-v2/share-financial-information
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+[component radio select]
+[label] Do you want to share your household financial information? (*Required)
+[select options]
+- Yes
+- No
+[button pair] [<< Back] [Continue >>]
+
+
+---
+
+
+
+#### Page: Financial disclosure - YES selected
+
+#### URL: health-care/apply/application/household-information-v2/financial-information-needed
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+[h3] Financial information you’ll need
+[p] We’ll ask for income information from 2022 for you, your spouse (if you’re married), and any dependents you may have.  
+[p]**Here’s what income information you’ll need to fill out this section:**
+[ul]
+- Gross annual income from work. Gross income is income before taxes and any other deductions. This includes income from a job like wages, bonuses, tips, and severance pay.  
+- Net income from a farm, property, or business. Net income is your income after taxes and deductions are subtracted. 
+- Other income you received. This includes things like retirement benefits, unemployment, VA benefit compensation, money from the sale of a house, or interest from investments.
+[END ul]
+
+[p] And we’ll ask for you or your spouse’s deductible expenses from 2022.
+
+[p] **Here’s what deductible information you can include in this section:**
+
+[ul]
+- Certain health care or education costs
+- Funeral or burial expenses for a spouse or dependent child
+[END ul]
+
+[p] These deductible expenses will lower the amount of money we count as your income.
+
+[button pair] [<< Back] [Continue >>]
+
+---
+
+
+#### Page: Financial disclosure - NO selected
+#### URL: health-care/apply/application/household-information-v2/share-financial-information-confirm
+
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+[component featured content blue background]
+[h3] Confirm that you don't want to provide your household financial information
+[p] **If you’re not eligible for VA health care based on enhanced eligibility status,** we need your financial information to decide if you’re eligible based on your income. 
+[p] **If you’re eligible based on enhanced eligibility status,** you don’t have to share your financial information for eligibility. But if you don’t share this information, we may not be able to decide if you qualify for no copays, free medications, or travel reimbursement.
+[button pair] [<< Back] [Continue >>]
+
+[END component featured content blue background]
+
+
+
+---
+
+**Section: Spouse**
+
+---
+
+#### Page: Marital status
+#### URL: health-care/apply/application/household-information-v2/marital-status
+(Note: if chose to not share financial information, this is the only other page presented in the household information section)
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+[component select]
+[label] What is your marital status? (*Required)
+
+[component additional information]
+[label] Why we ask for this information
+[content]
+[p] We want to make sure we understand your household’s financial information to better determine what health care benefits you can get. If you’re married, we also need to understand your spouse’s financial information.
+
+[END additional information component]
+
+[dropdown options]
+- Married
+- Never Married
+- Separated
+- Widowed
+- Divorced
+
+[button pair] [<< Back] [Continue >>]
+
+---
+
+
+#### Page: Spouse information
+#### URL: health-care/apply/application/household-information-v2/spouse-personal-information
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+
+[fieldset legend title] Spouse’s information
+
+[p] Fill this out to the best of your knowledge. The more accurate your responses, the faster we can process your application.
+
+[component text input label] Spouse’s first name(*Required)
+
+[component text input label] Spouse’s middle name
+
+[component text input label] Spouse’s last name(*Required)
+
+[component dropdown select] Spouse’s suffix
+[dropdown options]
+- Jr. 
+- Sr. 
+- II 
+- III 
+- IV
+
+[component text input label] Spouse’s Social Security number(*Required)
+
+[component date select] Spouse’s date of birth(*Required)
+[dropdowns for: month, day] [ input for year]
+
+[component date select] Date of marriage
+[dropdowns for: month, day] [ input for year]
+
+[button pair] [<< Back] [Continue >>]
+
+
+---
+
+
+#### Page: Spouse additional information
+#### URL: health-care/apply/application/household-information-v2/spouse-additional-information
+
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+
+[fieldset legend title] Spouse’s additional information
+
+[p] Fill this out to the best of your knowledge. The more accurate your responses, the faster we can process your application.
+
+[component additional information] 
+[label] Why we ask for this information
+
+[content] 
+[p] This information helps us determine if your spouse was your dependent in 2022.
+
+[component radio select label] Did you live with your spouse for all or part of 2022?
+[select options]
+- Yes
+- No
+
+[component radio select label] Do you currently have the same address as your spouse? (*Required)
+[select options]
+- Yes
+- No
+
+[button pair] [<< Back] [Continue >>]
+
+---
+
+
+#### Page: Spouse financial support (if NO answered on did you live with your spouse)
+#### URL: health-care/apply/application/household-information-v2/spouse-financial-support
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+
+[fieldset legend title] Spouse’s financial support
+
+[component radio select label] Did you provide financial support to your spouse in 2022 even though you didn't live together?
+
+[additional info component]
+[add info label]What we consider financial support for a spouse[end label]
+[add info content]
+[p]We consider any payments, even if they aren’t regular or the same amount, to be financial support. 
+[p bold] Financial support includes payments for these types of payments: 
+[ul]
+- Monthly spousal support 
+- One-time payment financial support
+
+[select options]
+- Yes
+- No
+
+[button pair] [<< Back] [Continue >>]
+
+---
+
+
+#### Page: Spouse address and phone number (if answered NO to same address question on additional info page)
+#### URL: health-care/apply/application/household-information-v2/spouse-contact-information
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+
+[fieldset legend title] Spouse’s address and phone number
+
+[component select label] Country(*Required)
+
+[component text input label] Street address(*Required)
+
+[component text input label] Street address line 2
+
+[component text input label] Street address line 3
+
+[component text input label] City(*Required)
+
+[component select label] State(*Required)
+
+[component text input label] Postal code(*Required)
+
+[component text input label] Phone number
 
 
 [button pair] [<< Back] [Continue >>]
 
 
 
----
-## Step 4 Household information 
 
 ---
 
-
-
-
-
-
-## Step 4 of 6: Household Information
-
-**Financial disclosure**
-
-Next, we’ll ask you to provide your financial information from the most recent tax year, which we’ll verify with the IRS. We use this information to figure out if you:
-
-1. Are eligible for health care even if you don’t have one of the qualifying factors
-2. Are eligible for added benefits, like reimbusement for travel costs or cost-free medications
-3. Should be charged for copays or medication
-
-_(gray box)_  **Note:** You don’t have to provide your financial information. But if you don’t have a qualifying eligibility factor, this information is the only other way for us to see if you can get VA health care benefits--including added benefits like waived copays. _(end gray box)_
-
-Qualifying factors:
-
-- Former Prisoner of War
-- Received a Purple Heart
-- Recently discharged combat Veteran
-- Discharged for a disability that resulted from your service or got worse in the line of duty
-- Getting VA service-connected disability compensation
-- Getting a VA pension
-- Receiving Medicaid benefits
-- Served in Vietnam between January 9, 1962, and May 7, 1975
-- Served in Southwest Asia during the Gulf War between August 2, 1990, and November 11, 1998
-- Served at least 30 days at Camp Lejeune between August 1, 1953, and December 31, 1987
-
-[Learn more](https://www.va.gov/healthbenefits/apps/explorer/AnnualIncomeLimits/HealthBenefits?_ga=2.33134654.1615093133.1624289581-860138168.1616615986) about our income thresholds (also called income limits) and copayments.
-
-Do you want to provide your financial information?(*Required)
-
-Yes
-
-No
-
-_(if no, gray box appears)_ If you don’t provide your financial information and you don’t have another qualifying eligibility factor, VA can’t enroll you. _(end gray box)_
-
-[<< Back] [Continue >>]
-
-_(if yes)_
-
-## Step 4 of 6: Household Information
-
-**Spouse’s information**
-
-Please fill this out to the best of your knowledge. The more accurate your responses, the faster we can process your application.
-
-Spouse’s first name (*Required)
-
-Spouse’s middle name
-
-Spouse’s last name (*Required)
-
-Suffix  _(dropdown)_ Jr. Sr. II III IV
-
-Spouse’s Social Security number (*Required)
-
-Spouse’s date of birth (*Required)
-
-Month Day Year _(dropdown)_
-
-Date of marriage (*Required)
-
-Month Day Year _(dropdown)_
-
-Did your spouse live with you last year?
-
-Yes
-
-No
-
-_(if no)_ If your spouse did not live with you last year, did you provide financial support?
-
-Yes
-
-No
-
-Do you have the same address as your spouse?(*Required)
-
-Yes
-
-No
-
-_(if no)_ **Spouse’s address and telephone number**
-
-Country(*Required) _(dropdown)_
-
-Street address(*Required)
-
-Street address line 2
-
-Street address line 3
-
-City(*Required)
-
-State (*Required) _(dropdown)_
-
-Postal code(*Required)
-
-Phone
-
-[<< Back] [Continue >>]
-
-
-## Step 4 of 6: Household Information
-Do you have any dependents to report?(*Required)
-
-Yes
-
-No
-
-_(if yes-Dependent information)_
-
-Dependent’s first name (*Required)
-
-Dependent’s middle name
-
-Dependent’s last name (*Required)
-
-Dependent’s suffix  _(dropdown)_ Jr. Sr. II III IV
-
-What’s your dependent’s relationship to you?(*Required)  _(dropdown)_ Daughter, Son, Stepson, Stepdaughter, Father, Mother, Spouse
-
-Dependent’s Social Security number (*Required)
-
-Dependent’s date of birth (*Required)
-
-Month Day Year _(dropdown)_
-
-When did they become your dependent? (*Required)
-
-Month Day Year _(dropdown)_
-
-Was your dependent permanently and totally disabled before the age of 18?(*Required)
-
-Yes
-
-No
-
-If your dependent is between 18 and 23 years of age, did they attend school during the last calendar year?
-
-Yes
-
-No
-
-Expenses your dependent paid for college, vocational rehabilitation, or training (e.g., tuition, books, materials)(*Required) $
-
-Did your dependent live with you last year?(*Required)
-
-Yes
-
-No
-
-_(if no)_
-
-If your dependent didn’t live with you last year, did you provide support? (Please count all support contributions even if they weren’t paid in regular and set amounts. Support can include tuition or medical bill payments.)
-
-Yes
-
-No
-
-[Add another Dependent] _(list loop dependent information)_
-
-[<< Back] [Continue >>]
-
-## Step 4 of 6: Household Information
-
-**Annual income**
-
-Please fill this section out to the best of your knowledge. Provide the previous calendar year’s gross annual income for you, your spouse, and your dependents.
-
-**Gross annual income:** This income is from employment only, and doesn’t include income from your farm, ranch, property, or business. When you calculate your gross annual income, include your wages, bonuses, tips, severance pay, and other accrued benefits. Include your dependent’s income information if it could have been used to pay your household expenses.
-
-**Net income:** This is the income from your farm, ranch, property, or business.
-
-**Other income:** This includes retirement and pension income; Social Security Retirement and Social Security Disability income; compensation benefits such as VA disability, unemployment, Workers, and black lung; cash gifts; interest and dividends, including tax exempt earnings and distributions from Individual Retirement Accounts (IRAs) or annuities.
-
-Veteran’s gross annual income from employment(*Required) $
-
-Veteran’s net income from your farm, ranch, property or business(*Required) $
-
-Veteran’s other income amount(*Required) $
-
-**Spouse’s income**
-
-Spouse’s gross annual income from employment(*Required) $
-
-Spouse’s net income from your farm, ranch, property or business(*Required) $
-
-Spouse’s other income amount(*Required) $
-
-**[Dependent name] income**
-
-Dependent’s gross annual income from employment(*Required) $
-
-
-Dependent’s net income from farm, ranch, property or business(*Required) $
-
-Dependent’s other income amount(*Required) $
-
-_(repeat per dependent)_
-
-[<< Back] [Continue >>]
-
-## Step 4 of 6: Household Information
-
-**Previous Calendar Year's Deductible Expenses**
-
-Tell us a bit about your expenses this past calendar year. Enter information for any expenses that apply to you.
-
-What if my expenses are higher than my annual income? _more information_
-
-We understand in some cases your expenses might be higher than your income. If your expenses exceed your income, we’ll adjust them to be equal to your income. This won’t affect your application or benefits. _end more information_
-
-Amount you or your spouse paid in non-reimbursable medical expenses this past year.(*Required) $
-
-Amount you paid in funeral or burial expenses for a deceased spouse or child this past year.(*Required) $
-
-Amount you paid for anything related to your own education (college or vocational) this past year. Do not list your dependents’ educational expenses.(*Required) $
-
-[<< Back] [Continue >>]
+**Section: Dependents**
 
 ---
+
+#### Page: Add dependents 
+
+#### URL: health-care/apply/application/household-information-v2/dependents
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+
+
+[component radio select]
+[label] Do you have any dependents to report?(*Required)
+
+[component additional information]
+[label] Who we consider a dependent
+
+[content] 
+[p] **Here’s who we consider to be a dependent:**
+
+[ul]
+- A spouse (we recognize same-sex and common law marriages) 
+- An unmarried child (including adopted children or stepchildren)
+
+[END ul]
+
+[p] **If your dependent is an unmarried child, one of these descriptions must be true:**
+
+[ul]
+- They’re under 18 years old, **or**
+- They’re between the ages of 18 and 23 years old and were attending high school, college, or vocational school full-time or part-time enrolled as a full time student in 2022, **or**
+- They're living with a permanent disability that happened before they turned 18
+
+[END ul]
+
+ [select options]
+- Yes
+- No
+
+[button pair] [<< Back] [Continue >>]
+
+----
+
+
+#### Page: Dependent’s information (selected YES to dependent question)
+
+#### URL: health-care/apply/application/household-information-v2/dependent-information?index=0
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+
+[fieldset legend title] Dependent’s information
+
+[component text input label] Dependent’s first name(*Required)
+
+[component text input label] Dependent’s middle name
+
+[component text input label] Dependent’s last name(*Required)
+
+[component dropdown select] Dependent’s suffix
+[dropdown options]
+- Jr. 
+- Sr. 
+- II 
+- III 
+- IV
+
+[component dropdown select] What is the dependent’s relationship to you?(*Required)
+[dropdown options]
+- Daughter 
+- Son 
+- Stepson 
+- Stepdaughter 
+- Father
+- Mother 
+- Spouse
+
+[component text input label] Dependent’s Social Security number(*Required)
+
+[component date select] Dependent’s date of birth(*Required)
+[dropdowns for: month, day] [ input for year]
+[component date select] When did they become your dependent? (*Required)
+[dropdowns for: month, day] [ input for year]
+
+[button secondary] Cancel adding dependent
+
+
+
+
+[button pair] [<< Back] [Continue >>]
+
+----
+
+#### Page: Dependent’s education expenses (Age between 18 and 23)
+
+#### URL: health-care/apply/application/household-information-v2/dependent-information?index=0
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+
+[fieldset legend title] [FirstName LastName]’s education expenses
+
+
+
+[component radio select label] If your dependent is between 18 and 23 years old, were they enrolled as a  full-time or part-time student in 2022? (*Required)
+[select options]
+- Yes
+- No
+
+[component text input label] Enter the total amount of money your dependent paid for college, vocational rehabilitation, or training (like tuition, book, or supplies) (*Required)
+
+
+
+[button secondary] Cancel adding dependent
+
+
+
+[button pair] [<< Back] [Continue >>]
+
+
+----
+
+#### Page: Dependent’s additional information 
+
+#### URL: health-care/apply/application/household-information-v2/dependent-information?index=0
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+
+[fieldset legend title] [FirstName LastName]’s additional information
+
+[component radio select label] Is your dependent living with a permanent disability that happened before they turned 18 years old? (*Required)
+[select options]
+- Yes
+- No
+
+[component radio select label] Did your dependent live with you in 2022? (*Required)
+[select options]
+- Yes
+- No
+
+[component radio select label] Did your dependent earn income in 2022? (*Required)
+[select options]
+- Yes
+- No
+
+[button secondary] Cancel adding dependent
+
+
+
+[button pair] [<< Back] [Continue >>]
+
+
+----
+
+#### Page: Dependent’s support (selected NO to dependent live with you question)
+#### URL: health-care/apply/application/household-information-v2/dependent-information?index=0
+
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+
+[fieldset legend title] Financial support for [Dependent’s first last name]
+
+[component radio select label] What we consider financial support for a dependent
+
+[component additional information]
+[label] What we consider financial support for a dependent
+[content] 
+
+[p] We consider any payments, even if they aren’t regular or the same amount, to be financial support. 
+[p bold] Financial support includes payments for these types of expenses: 
+
+[ul]
+- Tuition or medical bills 
+- Monthly child support 
+- One-time payment financial support
+
+[END additional info component]
+
+[select options]
+- Yes
+- No
+
+
+[button secondary] Cancel adding dependent
+
+
+
+[button pair] [<< Back] [Continue >>]
+
+
+----
+
+#### Page: Dependent’s annual income (selected YES to dependent income question)
+
+#### URL: health-care/apply/application/household-information-v2/dependent-information?index=0
+
+[fieldset legend title] [First Last]’s annual income from 2022
+
+[legend title] Gross income from work
+[p] Gross income is income before taxes and any other deductions are subtracted.
+
+[additional info component]
+[add info label] What we consider gross annual income 
+[add info content]
+[p bold] Gross income includes these types of income from a job:
+[ul]
+- Wages 
+- Bonuses 
+- Tips 
+- Severance pay  
+[end additional info component]
+
+[component label text input] Enter your dependent's gross annual income from 2022 (*Required)
+
+
+[legend title] Net income from a farm, property, or business
+[p] Net income is income after any taxes and other deductions are subtracted.
+[component label text input] Enter your dependent's net annual income from a farm, property, or business from 2022 (*Required)
+
+
+
+[legend title] Other income  
+[p] Other income is additional income that doesn't come from a job.
+[additional info component]
+[add info label] What we consider other annual income 
+[add info content]
+[p bold] Other income includes things like this:
+[ul]
+- Retirement benefits
+- Unemployment
+- VA benefit compensation
+- Money from the sale of a house
+- Interest from investments.  
+
+[component label text input] Enter your dependent's other annual income from 2022 (*Required)
+
+
+
+[button pair] [<< Back] [Continue >>]
+
+
+----
+
+[button secondary] Cancel adding dependent
+
+
+
+
+[button pair] [<< Back] [Continue >>]
+
+----
+
+#### Page: Review dependents
+
+#### URL: health-care/apply/application/household-information-v2/dependents
+
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+
+[fieldset legend title] Review your dependents
+
+[EXPERIMENTAL component card]
+[p]**Dependent’s first and last name**
+[p] Relationship
+
+[action link] Edit > 
+
+[EXPERIMENTAL action link] x Remove
+
+[END card]
+
+[component radio select]
+[label] Do you have another dependent to report?(*Required)
+
+[component additional information]
+[label] Who we consider a dependent
+
+[content] 
+[p] **Here’s who we consider to be a dependent:**
+
+[ul]
+- A spouse (we recognize same-sex and common law marriages) 
+- An unmarried child (including adopted children or stepchildren)
+
+[END ul]
+
+[p] **If your dependent is an unmarried child, one of these descriptions must be true:**
+
+[ul]
+- They’re under 18 years old, **or**
+- They’re between the ages of 18 and 23 years old and were attending high school, college, or vocational school full-time or part-time enrolled as a full time student in 2022, **or**
+- They're living with a permanent disability that happened before they turned 18
+
+[END ul]
+
+[select options]
+- Yes
+- No
+
+
+[button pair] [<< Back] [Continue >>]
+
+
+
+----
+
+[MODAL cancel adding]
+[component modal alert]
+
+[h3] Cancel adding this dependent?
+
+[p] This will stop adding the dependent. You’ll return to a list of any previously added dependents and this dependent will not be added.
+
+[button primary] Yes, cancel adding
+[button secondary] No, continue adding
+
+[END MODAL]
+
+
+[REMOVE MODAL]
+[h3] Remove this dependent?
+[p] This will remove **[First Name Last Name]** and all their information from your list of dependents.
+[button primary] Yes, remove dependent
+[button secondary] No, cancel
+
+[END MODAL]
+
+
+[CANCEL EDITING MODAL]
+[h3] Cancel editing this dependent?
+[p] If you cancel editing this dependent, we won’t save their information. You’ll return to a screen where you can add or remove dependents. 
+[button primary] Yes, cancel editing
+[button secondary] No, continue editing
+
+[END MODAL]
+
+
+
+---
+
+**Section: Financials**
+
+---
+
+
+#### Page: Veteran's annual income
+
+#### URL: health-care/apply/application/household-information-v2/veteran-annual-income
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+
+
+[fieldset legend title] Your annual income from 2022
+
+[legend title] Gross income from work
+[p] Gross income is income before taxes and any other deductions are subtracted.
+
+[additional info component]
+[add info label] What we consider gross annual income 
+[add info content]
+[p bold] Gross income includes these types of income from a job:
+[ul]
+- Wages 
+- Bonuses 
+- Tips 
+- Severance pay  
+[end additional info component]
+
+[component label text input] Enter your gross annual income from 2022 (*Required)
+
+
+[legend title] Net income from a farm, property, or business
+[p] Net income is income after any taxes and other deductions are subtracted.
+[component label text input] Enter your net annual income from a farm, property, or business from 2022 (*Required)
+
+
+
+[legend title] Other income  
+[p] Other income is additional income that doesn't come from a job.
+[additional info component]
+[add info label] What we consider other annual income 
+[add info content]
+[p bold] Other income includes things like this:
+[ul]
+- Retirement benefits
+- Unemployment
+- VA benefit compensation
+- Money from the sale of a house
+- Interest from investments.  
+
+[component label text input] Enter your other annual income from 2022 (*Required)
+
+
+
+[button pair] [<< Back] [Continue >>]
+
+----
+
+
+#### Page: Spouse’s annual income
+
+#### URL: health-care/apply/application/household-information-v2/spouse-annual-income
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+
+
+[fieldset legend title] Spouse's annual income from 2022
+
+[legend title] Gross income from work
+[p] Gross income is income before taxes and any other deductions are subtracted.
+[additional info component]
+[add info label] What we consider gross annual income 
+[add info content]
+[p bold] Gross income includes these types of income from a job:
+[ul]
+- Wages 
+- Bonuses 
+- Tips 
+- Severance pay  
+[end additional info component]
+
+[component label text input] Enter your spouse’s gross annual income from 2022 (*Required)
+
+
+[legend title] Net income from a farm, property, or business
+[p] Net income is income after any taxes and other deductions are subtracted.
+[component label text input] Enter your spouse’s net annual income from a farm, property, or business from 2022 (*Required)
+
+
+
+[legend title] Other income  
+[p] Other income is additional income that doesn't come from a job.
+[additional info component]
+[add info label] What we consider other annual income 
+[add info content]
+[p bold] Other income includes things like this:
+[ul]
+- Retirement benefits
+- Unemployment
+- VA benefit compensation
+- Money from the sale of a house
+- Interest from investments.  
+
+[component label text input] Enter your spouse's other annual income from 2022 (*Required)
+
+
+
+[button pair] [<< Back] [Continue >>]
+
+----
+
+#### Page: Deductible expenses
+#### URL: health-care/apply/application/household-information-v2/deductible-expenses
+
+
+[component progress bar]
+[h2] Step 4 of 6: Household financial information
+[end progress bar]
+
+
+[fieldset legend title] Deductible expenses from 2022
+
+[p] These deductible expenses will lower the amount of money we count as your income.
+
+[legend title] Non-reimbursable medical expenses
+
+[additional info component]
+[add info label] What we consider non-reimbursable medical expenses 
+[add info content]
+[p] Non-reimbursable medical expenses include costs you or your spouse (if you’re married) paid for these types of health care for yourselves, your dependents, or others you have the moral obligation to support:
+[ul]
+- Doctor or dentist appointments
+- Medications
+- Medicare or health insurance
+- Inpatient hospital care
+- Nursing home care 
+
+[p] We only consider expenses non-reimbursable if your health insurance doesn't pay you back for the cost.
+
+[end add info component]
+
+
+[component text input label] Enter the amount you or your spouse (if you’re married) paid in non-reimbursable medical expenses in 2022 (*Required)
+
+
+
+[legend title] College or vocational education expenses
+
+
+[additional info component]
+[add info label] What we consider non-reimbursable medical expenses 
+[add info content]
+[p] College and vocational expenses include payments for these expenses related to your own education: 
+[ul]
+- Tuition
+- Books 
+- Fees 
+- Course materials
+
+[p] Only include expenses for your own education (not your dependents' education).
+
+[end add info component]
+
+
+[component text input label] Enter the amount you paid for your own college or vocational education in 2022 (*Required)
+
+
+[legend title] Funeral and burial expenses for a spouse or dependent child who died 
+[p] Funeral and burial expenses are any payments made by you, like prepaid expenses.
+
+[component text input label] Enter the amount you paid for funeral or burial expenses in 2022 (*Required)
+
+
+
+[button pair] [<< Back] [Continue >>]
+
 
 
 
@@ -917,37 +1789,36 @@ Amount you paid for anything related to your own education (college or vocationa
 
 ### Page: Health insurance
 
-#### URL: health-care/apply/application/insurance-information/general
+#### URL: health-care/apply/application/insurance-information/your-health-insurance
 
 [component progress bar]
 [h2] Step 5 of 6: Insurance information
 [end progress bar]
 
+[h3] Your health insurance
 
-[p] Health insurance includes any coverage that you get through a spouse or significant other. Health insurance also includes Medicare, private insurance, or insurance from your employer.
+[p] In the next few questions, we’ll ask you about your health insurance.
 
-
-[label] Do you have health insurance coverage?(*Required)
-
-[additional info component]
-
-[title] Why we ask this information
-
-[content]
+[p] Health insurance includes any coverage that you get through a spouse or significant other. Health insurance also includes private insurance or insurance from your employer.
 
 [p] We ask for this information for billing purposes only. Your health insurance coverage doesn’t affect the VA health care benefits you can get.
 
-[p] Giving us your health insurance information helps you for these reasons:
+[additional info label] Why giving us your health insurance information may help you
 
-[ul]
+[additional info content] 
+[bold] Giving us your health insurance information may help you for these reasons:
 
-We must bill your private health insurance provider for any care, supplies, or medicines we provide to treat your non-service-connected conditions. If you have a VA copayment, we may be able to use the payments from your provider to cover some or all of your copayment.
-Your private insurance provider may apply your VA health care charges toward your annual deductible. Your annual deductible is the amount of money you pay toward your care each year before your insurance starts to pay for care.
+- We must bill your private health insurance provider for any care, supplies, or medicines we provide to treat your non-service-connected conditions. If you have a VA copay, we may be able to use the payments from your provider to cover some or all of your copay.
+- Your private insurance provider may apply your VA health care charges toward your annual deductible. Your annual deductible is the amount of money you pay toward your care each year before your insurance starts to pay for care.
+[end additional info component]
 
-[end ul]
+[button pair] [<< Back] [Continue >>]
 
-[END additional info component]
 
+#### URL: health-care/apply/application/insurance-information/general
+
+
+[label] Do you have health insurance coverage?(*Required)
 
 [radio select options]
 Yes

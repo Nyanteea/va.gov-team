@@ -1,6 +1,12 @@
 # Initiative Brief - 10-10EZ Household section optimization
 - [Household section optimization epic #41403](https://github.com/department-of-veterans-affairs/va.gov-team/issues/41403)
 
+### Figma Link
+| Purpose | Form | Figma Link |
+|-----------------------------------------------------------|-----------------|-----------------| 
+| Household information section (reflects production)| 10-10EZ | [Figma designs](https://www.figma.com/design/UljiHam46o5DItC5iDgmPd/10-10EZ?node-id=0-7393) |
+
+
 ## Outcome Summary
 
 The 10-10EZ is easier for applicants to understand and complete without having to exit the application.
@@ -48,16 +54,15 @@ The 10-10EZ is easier for applicants to understand and complete without having t
 #### **Key Result #1:** Reduce drop-off/exit rate for the Household section pages by a third.
 
 Data source - [Domo Dashboard](https://va-gov.domo.com/page/447193050)
+- Note: Total Apps started do not include Short Form flow, as those applications do not flow through the section we are monitoring
 
-| Product KPI | 2021| 2022 | Target | Post-Launch 1 week |Post-Launch 1 month|
-|------------- |---------|-------|-------------- |-------------- |-------------- |
-|Total Apps started |173,669|231,725 |N/A | TBD |TBD |
-|Household section |13.7% (23,803)|9.1% (21,074) |7% | TBD |TBD |
-|Financial Disclosure |4% (1,464)|0.3% (477) | no change |TBD |TBD |
-|Spouse Info |%|% | TBD |TBD |TBD |
-|Dependent info |%|% |% | TBD |TBD |
-|Annual Income |26.3% (40,791) |11.4% (14,772) | 8% |TBD |TBD |
-|Deductible Expenses |6.2% (9,704)|7% (9,116) | 5% |TBD |TBD |
+| Product KPI | 2021| 2022 | Jan-Jun 2023 |Target | Post-Launch 1 month|Post-Launch 3 months|
+|------------- |---------|-------|-------|-------------- |-------------- |-------------- |
+|Total Apps started |173,669|346,625 |81,431 |N/A  |21,353 |73,238 |
+|Household section drop-off |14% (23,803)|28% (98,209) |34% (27,715) |10% |39% (10,346) |24% (17,555) |
+|Financial Disclosure |4% (1,464)|0.3% (477) | 0% (no drop) |no change | 20% (4,148) |2.1% (1,211) |
+|Annual Income |26.3% (40,791) |30% (75,416) | 24% (12,417) |10% |23% (3,722) |29% (16,087) |
+|Deductible Expenses |6% (9,704)|8% (13,911) | 8% (3,296) |5% |3% (432) |9% (3,404) |
 
 
 #### **Key Result #2:** Increase application submissions by 5%, and submissions within a single session by 5%
@@ -65,10 +70,10 @@ This is based on a third of current exit rates converting to successful submissi
 
 Data source - [Domo Dashboard](https://va-gov.domo.com/page/447193050)
 
-| Product KPI | 2022 Baseline | Target | Post-Launch 1 week |Post-Launch 1 month|
-|------------- |---------|-------|-------------- |-------------- |
-|Application Submissions | 58% (137.5k)  | 63% | TBD|TBD|
-|Single-session Submissions | 67% (92k) | 72% | TBD|TBD|
+| Product KPI | 2022 Baseline | Jan-Jun 2023 | Target | Post-Launch 1 month|Post-Launch 3 months|
+|------------- |---------|-------|-------|-------------- |-------------- |
+|Application Submissions | 59.8% (138,687k)  | 61.4% (63,084) | 65% |78.6% (20,926) |78.9% (57,784)|
+|Single-session Submissions | 60.5% (83,941) | 62.2% (39,232) | 77%  |72.7% (15,205) |72.25% (41,749)|
 
 
 #### **Key Result #3:** Veterans feel prepared when they begin the Household section
@@ -115,11 +120,11 @@ Data source - Call Center team/TBD
 ### Collaboration Cycle
 
 - Collab Cycle ticket [#47766](https://app.zenhub.com/workspace/o/department-of-veterans-affairs/va.gov-team/issues/47766)
-     - [x] Design Intent 10/14/22
+     - [x] Design Intent
      - [x] Content and IA
      - [x] Research
      - [x] Midpoint
-     - [ ] Contact Center guide
+     - [x] Contact Center guide
      - [N/A] Analytics
      - [x] Staging
      - [x] Privacy & Security
@@ -165,8 +170,8 @@ Data source - Call Center team/TBD
 - Dec 2022: Usability testing kickoff
 - June 2023: Finalize designs, development
 - June 2023: Complete QA
-- July 2023: Launched to ???% of users
-- Aug 2023: Complete UAT
+- Aug 2023: Launched to 100% of users (8/11)
+- Sept 2023: Complete UAT
 
 ---
    

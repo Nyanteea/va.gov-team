@@ -12,11 +12,11 @@ Throughout our agile development cycles, we will validate and refine My HealtheV
 
 We have defined four work streams, or tracks, that will afford ample opportunities for us to elicit Veteran feedback while building a smooth, seamless rollout.
 
-**Track 1** will focus on migrating the core My HealtheVet applications to va.gov.  As of April 2023, the My HealtheVet on VA.gov landing page has launched, Secure Messaging is close to entering Phase 0 of its rollout, Appointments work is underway, Medical Records is in the build phase, and Medications is in discovery. Applications will move to VA.gov in a phased approach. 
+**Track 1** will focus on migrating the core My HealtheVet applications to va.gov.  As of September 2023, the My HealtheVet on VA.gov landing page has launched, Secure Messaging is in Phase 0 of its rollout, Appointments and Medical Records are nearing Phase 0, and Medications is in build. Applications will move to VA.gov in a phased approach. 
 
 - Appointments is covered by the health applications team, who are building out the unified appointment experience.
 - ByLight teams are building the applications on VA.gov, and are navigating the VA.gov platform collaboration cycle to do so. 
-- The CTO Health team is focused on the landing page, preferences and notification integration, monitoring the rollout phases of each MHV product,  determing how to maintain the Spotlight information on the landing page, and determining how to give support teams a way to train on the My HealtheVet on VA.gov applications in a lower environment. 
+- The CTO Health team is focused on the landing page, preferences and notification integration, monitoring the rollout phases of each MHV product,  determining how to maintain the Spotlight information on the landing page, and determining how to give support teams a way to train on the My HealtheVet on VA.gov applications in a lower environment. 
 
 **Track 2** will answer the question of how My HealtheVet as a whole fits into va.gov and the impact that will have on the information architecture and navigation of VA.gov and My HealtheVet on VA.gov itself. This work is being conducted in partnership with VA.gov content & information architect strategists, the public websites team, sitewide content team, account experience team, the platform team, and the mobile team. 
 
@@ -48,40 +48,41 @@ We aim to reduce the number of websites, products, and interfaces Veterans must 
 
 **Federal employees** 
 - Portfolio: Lauren Alexanderson
-- Product: Leila Rassi
-- Product: Marci McGuire
-- Design: Coulton Bunney
+- Product - Cartography Team: Patrick Bateman
+- Product - Secure Messaging: Janie Tankard Carnock
+- Product - Medical Records, Cerner Integration: Marci McGuire
+- Design: Kaitlin Fink
 - Design: Ryan Thurlwell
+- Design: Robyn Singleton
 - Design: Jenny Wang, Digital Corps Fellow
 - Product: Jasmine Yohannan, Digital Corps Fellow
 
 **Contractors (Agile Six)**
 - Delivery Manager: Lynne Johnson
+- Product Manager: Wes Rowe
 - Technical Architect: Carlos Felix
-- Team Coach: Dotti Cummings
+- Team Coach: Mike Collier
 - Delivery Coach: Stephen Smythe
 - Design Lead: Florence McCafferty
-- Product Manager: Tom Anderson
-- Designer: Keith Cheung
+- Researcher/Designer: Kat Brinkley
 - Full Stack Engineer: Richard Davis
 
 **Contractors (Ad Hoc)** 
 - Design: Jonathan Nelson
-- Research Lead: Cara Frissell
-- Engineering: Eric Voshall
-- QA Engineer: Erin Flaherty
-- Accessibility: Angela Fowler
-- Information Architect: TBD
+- Engineering: Daniel Cloud
+- Engineering: Jim Zaccardo
+- Accessibility: Vacant
+- Information Architect: Sara Sterkenberg
+- QA (shared with Health Enrollment): Allan To
 
-**Contractors (Oddball)
-- 508 Accessibility Specialist: Sara Smith
+
 
 ## Business Partners
 
 ### Account Experience Crew (authenticated experience)
 Crew chief: Chante Lantos-Swett
--	My VA (Samara Strauss)
--	Profile (Samara Strauss)
+-	My VA (Chante Llantos Sweet)
+-	Profile (Chante Llantos Sweet)
 -	VA Notify (Shane Elliott, Beverly Nelson)
 -	VEText (Shane Elliott, Beverly Nelson)
 -	VSP Identity (John Rahaghi)
@@ -103,7 +104,7 @@ Related: Office of Connected Care (OCC) has a portfolio of ~70 mobile apps (1/2 
 
 
 ### Benefits
-- Debt Resolution (Matt Self)
+- Debt Resolution (Denise Coveyduc)
 - PACT Act (Zach Goldfine, Danielle Thierry)
 
 ### Sitewide Crew
@@ -114,6 +115,15 @@ Crew chief: Dave Conlon
 -	Laura Willwerth (content)
 
 ### OCC 
+**Federal employees**
+-	Head of OCC and Acting Dept. of Veterans Affairs CIO: Dr. Neil Evans
+-	Executive Director of Connected Care: Dr. Meredith Josephs
+-	Director of Veteran and Consumer Informatics Office: Theresa Hancock (Director of My HealtheVet)
+-	Director of CC who oversees MHV and mobile.va.gov: Nancy Wilck
+-	Management analyst/engineering oracle: Carnetta Scruggs
+-	Secure messaging product owner: Patty Henry
+-	Medical records product owner: Bresha Lipscomb
+
 **Bylight contract team**
 -	Barry Egbert (engineer)
 -	Bryan Riley (product)
@@ -126,16 +136,6 @@ Crew chief: Dave Conlon
 -	Lexi Wunder (design) 
 -	Jessica Robertson (design)
 -	Anne Costello (research)
-
-**Federal employees**
--	Head of OCC and Acting Dept. of Veterans Affairs CIO: Dr. Neil Evans
--	Executive Director of Connected Care: Dr. Meredith Josephs
--	Director of Veteran and Consumer Informatics Office: Theresa Hancock (Director of My HealtheVet)
--	Director of CC who oversees MHV and mobile.va.gov: Nancy Wilck
--	Management analyst/engineering oracle: Carnetta Scruggs
--	Secure messaging product owner: Patti Henry
--	Medical records product owner: Bresha Lipscomb
-
 
 ## Measuring success 
 

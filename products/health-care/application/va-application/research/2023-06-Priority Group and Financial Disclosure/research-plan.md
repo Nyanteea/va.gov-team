@@ -1,4 +1,4 @@
-# DRAFT Research Plan for health care application generative research study around Priority Groups and Financial Updates [Health Enrollment Team, 10-10EZ, July 2023]
+# Research Plan for health care application generative research study around Priority Groups and Financial Updates [Health Enrollment Team, 10-10EZ, July 2023]
 
 ## Background
 The online health care application (10-10EZ) and the update form (10-10EZR which is only paper form today) can both impact a Veteran's eligibility and placement when applying for and managing their health care benefits. This is more so impactful for those placed in a Priority Group who need to have income information considered for copays and travel reimbursement in addition to eligibility. The 10-10EZ is the initial application that then places a Veteran in a Priority Group for enrollment into the full medical benefits package. The 10-10EZR is used to provide personal, financial or insurance information updates after enrollment. 
@@ -49,10 +49,8 @@ We will use these findings to:
 **Learn more about Veteran's mental model when applying for and managing their health care benefits including the terms they use and how they understand eligibility and their specific benefits.**
 
 - What are Veteran's understanding of what benefits they will get and the cost to them when enrolling for health care benefits?
-- How do Veterans refer to their health care benefits and costs - what terms do they use?
 - What are Veteran's understanding of what benefits they will get and the cost to them after enrollment?
 - What are the Veteran's current pain points with how the health care application impacts the overall health care journey?
-- What information do Veterans feel most that the VA has and they should not have to provide?
 - What is the Veterans mental model of eligibility and Priority Groups around their benefits and costs?
   
 
@@ -63,7 +61,7 @@ We will use these findings to:
 - What is the communication and education process around Priority Groups like from the Veteran's perspective today? (current state)
 - What information around PG/copays would the Veteran like to have easy access to and where? (future state)
 - Where do Veterans call out as their preferred way to view their Priority Group information? 
-- Do Veterans associate Priority Groups more with eligibility or with benefits?
+
 
 **Learn more about how Veterans would like to go about providing updated information - such as financial information or dependents - that could impact their health care benefits after enrollment.**
 
@@ -101,7 +99,7 @@ Remote via Zoom for the interviews
 - [Link to conversation guide](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/application/va-application/research/2023-06-Registration%20flow%20exploration/conversation-guide.md)
 
 
-- [Recruitment ticket]
+- [Recruitment ticket](https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues/347)
 
   
 	
@@ -146,23 +144,26 @@ What demographics, experience, and scenarios do you need participants to meet to
 
 
 ### Prepare
-**Pilot 1 - Moderator David Kennedy**
+
+
+**Pilot 1 - Moderator Hieu Vo**
+* Pilot participant email: Fletcher Bonds (fletcher.bonds@adhocteam.us)
+* Date and time of pilot session: Friday July 21, 2023 at 1pm ET / 10am PT
+
+
+
+**Pilot 2 - Moderator David Kennedy**
+* Pilot participant email: Heather Justice (heather.justice@adhocteam.us)
+* Date and time of pilot session: Tuesday July 25, 2023 at 1pm ET / 10am PT
+
+
+**Pilot 3 - Moderator Katelyn Caillouet**
 * Pilot participant email: 
-* Date and time of pilot session: 
-
-
-**Pilot 2 - Moderator Katelyn Caillouet**
-* Pilot participant email: 
-* Date and time of pilot session: 
-
-
-**Pilot 3 - Moderator Hieu Vo**
-* Pilot participant email: 
-* Date and time of pilot session: 
+* Date and time of pilot session: Wednesday July 26, 2023 at 2pm ET / 11am PT
 
 
 ### Research sessions
-* Planned dates of research: **July 27 - August 9, 2023**
+* Planned dates of research: **July 27 - August 8, 2023**
 
 ### Length of sessions
 * Session length:  < 1 hour
@@ -189,7 +190,6 @@ Please request enough dates and at ***least double the amount of time slots for 
 | August 4, 2023	|  12pm - 4pm ET 	|
 | August 7, 2023	|  12pm - 4pm ET 	|
 | August 8, 2023	|  1pm - 4pm ET 	|
-| August 9, 2023	|  12pm - 4pm ET 	|
 
 
 
@@ -202,6 +202,12 @@ Please list the people who will be serving in each role. **Include the primary p
 - Participant(s) for pilot test:
 - Accessibility specialist (for sessions where support for assistive technology may be needed):
 - Note-takers:	Perigean and 1010 Health Enrollment Team
-- Observers: [link to sign up post on Slack]
+- Observers: [link to sign up post on Slack](https://dsva.slack.com/docs/T03FECE8V/F05HXN2V8E8)
 
 **List email addresses for those who should attend and observe the sessions: VA Stakeholders, engineering team members, design team members, any other people who might find this research relevant to their work.** Spread observers across sessions so that there are no more than 5-6 total attendees (moderator, notetaker(s), observer(s)) per session on the VA side 
+
+
+## Approvals
+- Reviewed and approved by Kristen McConnell on July 19, 2023 via Slack. 
+- Moved from submitted to current on Research Repo by Robyn Singleton on July 24, 2023.
+

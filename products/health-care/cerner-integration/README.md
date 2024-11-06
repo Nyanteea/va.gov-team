@@ -1,4 +1,4 @@
-# DRAFT
+Last updated 8/20/2024
 
 This is a folder for the Cerner integration work. 
 
@@ -8,13 +8,11 @@ This is a folder for the Cerner integration work.
 
 | Product  | Status |  Note(s) |
 | ------------- | ------------- | ------------- |
-| Patient Check-in (PCI)  | Data Mapping  | Task Order awarded. |
-| VEText (part of PCI)  |  Data Mapping | Task Order awarded. |
+| [VEText 2.0](https://github.com/department-of-veterans-affairs/vetext/wiki/VEText-2.0-Cerner-MVP) | Deployed in P0630 | ------------- |
 | Applications for Visit Summaries (AVS) | Future Phase  |  |
 | MyHealtheVet (MHV) |  | ------------- |
-| [Clinical Decision Support Platform](https://github.com/department-of-veterans-affairs/cdsp-program) (CDSP) | Testing | ------------- |
-| [Covid-19 Patient Manager](https://github.com/department-of-veterans-affairs/covid-patient-manager/) (CPM) | Testing | ------------- |
-| [Lung Cancer Screening](https://github.com/department-of-veterans-affairs/lung-cancer-screen-and-track) (LCS) | ATC Granted | ------------- |
+| [Covid-19 Patient Manager](https://github.com/department-of-veterans-affairs/covid-patient-manager/) (CPM) | Deployed in P0630 | ------------- |
+| [Lung Cancer Screening](https://github.com/department-of-veterans-affairs/lung-cancer-screen-and-track) (LCS) | Deployed in P0630 | ------------- |
 | Precision Oncology (PO) | No Cerner Integration | ------------- |
 
 # Cerner Environments

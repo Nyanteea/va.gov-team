@@ -11,7 +11,6 @@ _Review participant list for participant name and screener question responses_
 - _@mention team members_
 
 - _Share brief summary of participant demographic info_
--
 
 **10 min before session:**  _Sign onto Zoom website in web browser as Perigean w/credentials provided and start Zoom meeting_
 
@@ -66,7 +65,10 @@ I have started recording. I'd like to confirm: Are you comfortable if I record m
 - How often do you use My HealtheVet?
 - How often do you use Secure Messaging?
   - Are those messages sent to the same providers all the time?
+- Could you please tell me the reasons you have sent secure messages in the past?
+  - Why did you use secure messaging instead of calling?
 - What other activities do you do in My HealtheVet besides sending messages?
+- Do you use any VA mobile apps to send messages to your care providers? Can you describe your experience?
 
 ## **Task 1: Interview**
 
@@ -95,7 +97,7 @@ _[if no:]_
 
 _[if yes:]_
 
-- Can you walk me through what you did?
+- Can you walk me through what you did to find the right person to send your message to?
 
 ## **Task 2: Contact Lists**
 
@@ -116,6 +118,12 @@ _[open second drop-down]_
 - Which of these would you choose?
 - What made you choose that one?
 - What could you do to ensure that you selected the correct one?
+
+**Category**
+
+When typing a message, which category do you choose?
+
+Have you ever had a hard time knowing which one to pick?
 
 **Learning SM**
 

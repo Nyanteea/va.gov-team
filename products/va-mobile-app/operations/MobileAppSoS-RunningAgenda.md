@@ -3,89 +3,649 @@
 
 ## Meeting Purpose:
 
-  * Highlight the quarterly plan and review progress
-  * Review changes in risks, dependencies, assumptions, resources, staffing or priority for the current / future sprints
-  * Review insights from ongoing discovery or delivery work in the for the current / future sprints
-  * Triage unplanned work
-  * POs reconfirm project priorities
-  * [Mobile SoS Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/3)
-  
+  * Review status of current work
+  * Discuss changes in risks, dependencies, assumptions, resources, staffing or priority for the current / future sprints
+  * Review insights from ongoing discovery or delivery work for the current / future sprints
 
-
-## Q3 Projects In Progress 
- - Currently in Sprint 75 ( 7/4 - 7/18) 1 of 7 sprints for Q3
- - 
- - 3rd Quarter projects that are currently being worked on by the mobile team
- - Focus will be on non-green items unless there are questions / specific updates
- - Work is listed in PO's priority order based on SoS Sprint Tab
+  * POs confirm Epic priorities
+     * Triage new Experience Team work
    
-|Project | PM | Status | Current Sprint Work | Future Sprint Work | Est Completion Timing |
-| ----------- | ----------- | ----------- |-----------| -------------| ----------|
-|[EVSS Backend Migration](https://app.zenhub.com/workspaces/va-mobile-blue-team-63483d4e9ff9282a04fef8a3/issues/gh/department-of-veterans-affairs/va-mobile-app/2558) | Kelly | GREEN | Complete Documents API in Vets API; Align policies between EVSS and LH, Integrate with Docs API in vets-API | Turning on Claims Status in Prod, Finish up Direct Deposit migrations, Finish up Decide my claim | Sept '23 | 
-|[Check-In](https://app.zenhub.com/workspaces/va-mobile-blue-team-63483d4e9ff9282a04fef8a3/issues/gh/department-of-veterans-affairs/va-mobile-app/4315) | Meko | GREEN | PM: Project follow up and sizing| BE integration with final api designs, FE Development | Sept '23 |
-| [Deeplinking](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/6037) | Stacy | GREEN |Completing Discovery/Moving into Implementation| | Aug '23| 
-| [Appointment: List & Detail content alignment audit](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/5136) | Meko | GREEN | Appt List & Detail content audit and recommendation review | Recommendation readout | Aug '23 |
-| [Appointment Refinement: Compensation & Pension](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/4725)  | Meko  |Green | Remove Cancel button & content update for C&P appts -Complete |  | 8/1 App release |
-| User Endpoint Update | Ameet | GREEN | | | | 
-| Finding Medications-Comparitive Analysis | Meko/Lauren | Green |   |  | August '23| 
-| Pre-Needs Burial Claims Sprint 0  | Adam  | GREEN | BE discovery, Product web experience review, talk with PO on what data we know today | Present Sprint 0 | July '23 |
-| [OKR and MVP Dashboards](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/5704) | Adam, Ameet | GREEN | Demo Appointments dashobard, start on SM dashobard; removed covid dashboard from the list | Next 2 Dashboard priorities Login Blocked, Letters | All Q3|
-| [Mobile App Retention Research and Analysis](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/5952) | Adam, Ameet | GREEN | Finish out Veteran research (12 interviews left), preliminary research findings, quantitative data analysis on login | Finalize findings and present | Aug '23 | 
-| [General Analytic Request and Needs](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/6070) | Adam, Ameet | GREEN | Review [Mobile App Promo Banner](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/5141) work with Dave 7/18 | | | Ongoing |
-| [Platform Preparation - Design System](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/6011) | Kelly, Ameet | GREEN | Designated FE team determined, Met last week and created tickets to focus on | | All Q3 | 
-| [Android SSO Login Update / Custom Tabs](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/5118) | Stacy | GREEN | Items merged with Dev| | July '23 |
-| [Mobile Bug Maintenance & Discipline Tech Debt](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/5367) |Adam | GREEN | 10 bug tickets, BE technical debt, UX tech debt | Continued work managing bug tickets and discipline tech debt | Ongoing | 
-| [Detox UI ](https://app.zenhub.com/workspaces/va-mobile-product-view-610035bc5395bb000e62e529/issues/gh/department-of-veterans-affairs/va-mobile-app/3728) | Kelly | GREEN | Finish Past Appointments, RX, VA Letters and Docs, Contact Info and Perseonal Info | Next items: Direct Deposit, Veteran Crisis Line, Payments, Settings | All Q3 |
-| RX Analytics** | Meko/Greta | Green| Engineering adding new events for improved RX reporting -Complete | None | July '23 | 
-| [Cancel Message Content Auidt**](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/2172) |Stacy |GREEN | Content changes, Wrapping up tickets with QA  | NA | July '23|
-* *Alternate Project
-* **Carryover
+  * Review [SEV-1 & SEV-2 Bugs](https://github.com/department-of-veterans-affairs/va-mobile-app/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug%20label%3Asev-1%2Csev-2)
+   
+  * [Mobile SoS Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+     * Call out any Closed Epics
+     * Call out unplanned work
+  
+### [OKRs](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/operations/MobileTeamOKRs.md)
 
-## Q3 Projects Planned Not Yet Started
- - 3rd quarter projects planned but have not yet started
- - Sprint 0 priority (7/18) - Push Notifications, Appeals Letters, Terms of Use
+### Experience Team stats
+|Current # of Change Requests | # of Teams | 
+|-------| ---------|
+|10 | 9 |
 
-| Priority |Project | PM | Status | Timing |
-|-------- | ----------- | ----------- | ----------- |-----------| 
-|Planned | [Veteran Status](https://app.zenhub.com/workspaces/va-mobile-product-view-610035bc5395bb000e62e529/issues/gh/department-of-veterans-affairs/va-mobile-app/4270) | Adam |Experiment starting Sprint 77 | Aug '23 |
-|Planned | Finding Medications Research & Analysis | Meko | Sprint 76 - 77 Aug'23| 
-|Planned |RX List and Details Update | Meko | Sprint 80 - 81 Oct '23|
-|Planned | Claims Reimagined Step 1 | Stacy | Sprint 79 Sept '23| 
-|Planned | User Endpoint Update | Stacy | Not Started | Sprint 78 - 81 Oct '23| 
-|Planned | Remote Disaster | Stacy |Not Started  | Sprint 79 - 81 ; carrying over into Q4 |
-|Planned | Travel Reimbursement Step 1 -2 | Adam | Not Started | Sprint 78 -79 Sept '23 |
-|Planned | Terms of Use Sprint 0 | |Not Started | Sprint 81 Oct '23 |
-|Planned | Appeals Decision Letters Sprint 0| Stacy |Not Started | Sprint 80 Sept '23|
-|Planned | Push Noticication Overall Strategy Sprint 0| | Not Started | Sprint 80 Sept '23 | 
-| Alternate | [Secure Messaging - Migrate to Re-Engineered MHV APIs](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/5562) | Adam | Blocked - MHV SM team - Sept | Met with MHV SM they are targeting completion by the 1st week of September; need to determine when to plan this project - Sprint 80?  | Meeting with MHV SM late August after their PI planning session  | TBD |
-| Alternate | [In-App Recruitment Step 2](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/4353) | Adam | Blocked - Awaiting Prioritization | |  | TBD |
+
+## 10/30/24
+* **Epics Review**
+  * [Kanban Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+* **Experience Team Requests Review**
+  * [XP Team Requests](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13?filterQuery=label%3AEpic+team%3ALeads)
+* **New Exp Team work for Flagship teams in Sprint 110**
+  * H&B: https://github.com/department-of-veterans-affairs/va-mobile-app/issues/9639
+      * Not adding new error handling, just updating content
+  * Global: https://github.com/department-of-veterans-affairs/va-mobile-app/issues/9619
+      * Global team has refined the work and will get into the next Sprint
+* When an Experience Team Change Request has been vetted and is ready to go to the Flagship team to break out, what are expectation on how quickly the work gets into a Sprint?
+  * Once the work is broken out and ready to be worked, priority of the work is discussed in this SoS meeting
+  * Default expectation is NOT that the work will always be done immediately
+* Flagship work to review Experience Team work (design reviews, Test Plan review, PR reviews, etc.)
+  * May need to add an Epic for Global and H&B team to account for time reviewing and consulting on Experience Team work
+
+## 10/16/24
+* **Epics Review**
+  * [Kanban Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+* **Experience Team Requests Review**
+  * [XP Team Requests](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13?filterQuery=label%3AEpic+team%3ALeads)
+* Q4 Plan Readout
+
+## 10/2/24
+* **Epics Review**
+  * [Kanban Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+* **Experience Team Requests Review**
+  * [XP Team Requests](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13?filterQuery=label%3AEpic+team%3ALeads)
+* Q4 Planning milestones
+  * [Quarterly Planning Overview](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/product/planning/quarterly%20planning/MobileQuarterlyPlanningProcess.md)
+  * Readout in SoS Oct. 16
+* Home screen 60 day quantitative and qualitative data readout
+ * [Quantitative Tracking](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/features/design-personalization/data/Home%20Screen%20Quantitative%20Success%20Tracking.md)
+ * Qualitative Feedback
+    * Overall, very positive
+      * App store
+        * 5 stars - "I really love the new layout and the **GUI is super easy to use**."
+        * 5 stars - "The new release is great. All **important info on home screen**."
+        * 5 stars - "This latest update is so great!!! As soon as I logged in, **I was greeted with everything that I needed on the first screen**. Developers should take note. This is how an interactive app should be built. Kudos to the team that worked on this improvement."
+   * The only negative feedback is surfacing disability rating and monthly payment due to privacy concerns
+      * App store ratings with negative feedback about monthly payment mentioned it in conjunction with other issues
+        * 2 stars - 2.33 crashes every time I open. Please fix. As a user, **I don’t like that my monthly disability award** is displayed. Please roll back this new change.
+        * 4 stars - Everything about the app is great, except **"the monthly payment" should be placed on the payment page and not on the Front page for everyone to see. The bigger the amount, the bigger the target the Veteran becomes.** Please move this to the payment page. Then I'll give it 5 Stars.
+       * Reddit comments
+         * **It shouldn’t have our $ amount on the front page.** Outside of that, I like it a lot.
+         * I don’t like it .. as soon as you open it big as day your rating and payment. **The payment should not be there like that**.
+       * Email
+         * I just wanted to provide feedback to the recent UI update in the app.
+**I do not prefer to have my connected percentage and monthly amount paid on the front screen** as soon as you login to the app. It **gives away too much information that others can see **sitting beside you when you need to open the app up. It’s a big privacy issue putting that on the main page, imo.
+I liked it previously where it just said you were service connected and you had to drill down further in order to get those kind of private details
+
+
+## 9/18/24
+* **Epics Review**
+  * [Kanban Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+* **Experience Team Requests Review**
+  * [XP Team Requests](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13?filterQuery=label%3AEpic+team%3ALeads)
+* Ask - think through prioritization process (PM group)
+  * User Impact, Business Impact, LOE
+  * Want to have a clearer way of describing priority of Epics
+* Ask - User Metrics for Shared Services (Don, Ryan, Matt, Kelly)
+  * how many current users do we have? by user, I mean # of people, # of teams, or however else we define user
+  * on average, how many "leads" do we get every month (or whichever time frequency we use to track)? by lead, I mean new teams filling out an intake form
+  * approximate % of leads who become an actual user?
+*  Rachel's 'Product Launch'
+  *  Likely out Nov. 15, returning end of Jan/early Feb (Feb 10)
+* Upcoming VA events:
+  * DE Portfolio monthly mtg w/ Charles 
+    * Veteran Facing - Oct 1
+    * Shared Services - Nov 1
+  * week of Nov 11 - OCTO off-site
+
+
+## Agenda
+## 9/4/24
+* **Epics Review**
+  * [Kanban Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+* **Experience Team Requests Review**
+  * [XP Team Requests](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13?filterQuery=label%3AEpic+team%3ALeads)
+* **Home Screen 30 Day Metrics Review**
+
+
+## 8/21/24
+* **Epics Review**
+  * [Kanban Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+* OKR formats - review OKR page and discuss update timing
+  * Bug Reduction OKRs (Therese)
+* Disaster recovery / home screen API call usage
+  * upstream teams feeling stress of additional home screen traffic to their APIs
+  * most teams have been able to scale except the Community Care appts which caused failures in other tools
+  * Lesson Learned - think about this for future feature development and be sure to work with upstream services ahead of launching to get them ready
+  * We are looking at adding the functionality to turn off individual home screen cards to reduce load to those services [ticket](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/9355)
+     * Priority of this change = medium to low
+  * Monthly Payment API switch over - do we know if the new API would perform better? - Stacy to check with Jayson to answer
+     * Need to ensure the data is the same - work with owners of new API to confirm
+     * We should test to confirm as well
+*  How to learn about changes from other teams.
+   *  We don't currently get timely notification of upstream API changes
+   *  We also didn't communicate to upstream API teams about added traffic either, so this is a wide-spread problem
+   *  OCTO Portfolios are aware of this communication gap and having active conversations
+   *  In the meantime, we should keep this gap in mind and do our best
+   * ex.2. Switching API call from EVSS to Lighthouse and what is the cost of doing so - monthly payment call on homepage
+   * ex.1. VA.gov added error messaging for Z status for Veteran status but did not inform us, despite talking to us about the bug.
+* Mobile - Web Collaboration session last Friday
+   * It was great, you can watch the recording if you couldn't join
+   * Had a lot more communication with experience teams since then
+* What are the next steps for the Veteran Status work?
+   * Leads discussing Thursday 8/22 for how this will work*
+      * *There is nothing to panic about
+      * Will have to be strict with our prioritization decisions
+
+## 8/7/24
+* **Epics Review**
+  * [Kanban Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+* OKR formats - review OKR page and discuss update timing
+  * Bug Reduction OKRs (Therese)
+* How to learn about changes from other teams. For example, VA.gov added error messaging for Z status for Veteran status but did not inform us, despite talking to us about the bug.  
+
+## 7/10/24
+* **Epics Review**
+  * [Kanban Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+  * Health & Benefits update
+     * Removed Covid-19 links 
+     * Appointments work going out this relese
+         * Call Center and App store where not updated - believe to be minimal change 
+            * Alayna to discuss with the HB team changes
+        * Rachel said moving forward Call Center and App Store needs to be updated (if applicable), if not features should not be released   
+           * Alayna recommended to work with Ameet as he will / has worked on these items for Homescreen Personalization
+           * PO discussion on how to handle this with external teams - Don mentioned it would be the centralized Mobile team which is this team right now 
+    * No other updates from PM 
+* **Discussion Topics**
+ * Lauren - Marketing Materials   
+     * Rachael - Mobile Ad Hoc not responsible for Marketing Materials (images, videos, etc)
+     * Michelle is the key contact for VA Marketing which Mobile has worked with in the past with data / reporting 
+ * Rachel - H&B meeting with Health Team Web
+     *  What is the level of engagement / collaboration & visibility into how Mobile work
+        *   Alayna - more used for subject matter expertise discussions where Mobile can ask questions and review what Mobile is proceeding to do
+         *  H&B team has given presentation on the changes Mobile would like to do and why 
+ * Ameet - How would the Mobile POs and other relevant POs want to see Holly's presentation on HSP
+     * Confirmed this is different level of detail than the write up that is already available in Githuhb
+     * Holly will be presenting next Monday at the VA Design Meeting
+        * Ryan confirmed this is the big design meeting with contractors that VA has
+     * Team agreed to demo this on 7/30 - which is when the app will be released
+        * Targeting 30 minutes instead of the whole thing so others can demo too 
+ * Rachel - PMs should prepare to engage with VA POs on new Mobile request and roadmap items in the coming weeks
+     * Rachel told PMs not to have direct messaging or Slack threads discussions
+         * Require them to create tickets with all the details 
+         * POs agreed we need to push the responsibility back on the VA POs and not take it on ourselves  
+     * Matt mentioned to Rachel that Adam was working on a form of sorts - would be great to get that done sooner vs later this week 
+        * Adam is working on an existing [Feature Request](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/new?assignees=timwright12%2CHallm13&labels=feature-request&projects=&template=feature-request.yml&title=Feature+Request%3A+%5Bname+of+feature%5D) form and planning to update it to have submittors fill out more information given its currently very vague and general 
+        * Adam to follow-up when changes are made by EOW 
+
+
+
+## 6/26/24
+* **Epics Review**
+  * [Kanban Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+* **Discussion Topics**
+  * Summer capacity
+  * GitHub Sprints tab
+     * Asking that all teams use this for Q3 planning 
+  * Q3 Planning 
+
+
+## 6/17/24
+* **Epics Review**
+  * [Kanban Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+* **Discussion Topics**
+  * Anything we need to discuss from last week?
+  * Staggering release for Homescreen and Appts releases
+    * Appointments first (7/16)?
+    * then Homescreen (7/30)?
+      * Ameet to follow-up with Rachel about demoing the new Home Screen
+  * Decision making for Health and Benefits problem spaces
+    * Health POs will make decisions except in cases when:
+      * immediate mobile issue, highlighting to Health POs
+      * mobile expertise is required
+    * Analytics needed for decision making may need further discussion and access for other POs
+  * Rachel OOO first week of July and only semi-available the 3rd week of July
+  * Onboarding Initiative (Push Notification Opt-in flow) - Ameet to schedule follow-up meeting
+
+## 5/29/24
+* **Epics Review**
+  * [Kanban Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+* **Discussion Topics**
+  * RQ next steps
+    * H&B work is at a stopping point
+    * Global can focus on QA for RQ work that is in PROD
+    * Global should also decide the priority of any additional RQ work and plan it as a project
+  * staggering releases for Homescreen and Appts so we can avoid/plan for 2 big things going out in same release
+    * Adam, Ameet, and Alayna to discuss
+
+## 5/15/24
+* **New Meeting Format**
+  * Confirm most important info to cover from POs perspective
+  * Confirm meeting start time (3:05 ET, 3:30 ET?)
+  * Review Epic status from [Kanban board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+      * Ensure statuses on Epics are updated day before this SoS meeting so POs can review updates before this SoS meeting each Sprint
+          * Update the following:
+          * Status grid in Epic details
+          * Target Start and Target Delivery Dates in right-hand side
+          * Project Status in right-had side
+          * Epic status on SoS Board matches Epic status in ZenHub
+          * POs to update the Target Dates and Status of the Epic on the Digital-Experience-Products board since contractors cannot edit
+      * We will NOT go through each Epic, but will go through anything with Risks, Blockers, or questions
+      
+* **Process Retro**
+  * As we've split into separate teams, what processes are working well at the team level and where are there areas where we need standardization across teams?
+  * [Mural board](https://app.mural.co/t/adhoccorporateworkspace2583/m/adhoccorporateworkspace2583/1715720774099/f5818b6c94c7e3ccddb54b63c419de2e2753a69c?sender=matthall4429)
+
+
+
+
+__________________________________________________________________________
+## 12/12/23
+
+* **Q4 Projects in Progress**
+  * Look at [Kanban board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+  * Work is listed in PO's priority order based on SoS Sprint Tab 
+   
+* **Project Status Updates**
+  * Review yellow projects
+  * Any PO questions on existing projects?
+    *  Availability Framework
+    *  Home Screen
+    *  Monthly data interpretation
+
+* **Standing question for the POs**
+  * Any new work we should be on the lookout for?
+  * Any priority shifts or other updates?
+
+* **Sprint Planning**
+   * [Mobile SoS Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/3)
+
+    
+* **Other topics**
+
+## 11/28/23
+
+* **Q4 Projects in Progress**
+  * Look at [Kanban board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+  * Work is listed in PO's priority order based on SoS Sprint Tab 
+  * Current Sprint
+    * Sprint 
+   
+* **Project Status Updates**
+  * Review yellow projects
+  * Any PO questions on existing projects? 
+
+* **Standing question for the POs**
+  * Any new work we should be on the lookout for?
+  * Any priority shifts or other updates?
+
+
+* **Sprint Planning**
+   * [Mobile SoS Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/3)
+
+    
+* **Other topics**
+   * Monthly data interpretation (Liz & Greta)
+
+## 11/14/23
+
+* **Q4 Projects in Progress**
+  * Look at [Kanban board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+  * Work is listed in PO's priority order based on SoS Sprint Tab 
+  * Current Sprint
+    * Sprint 
+   
+* **Project Status Updates**
+  * Review yellow projects
+  * Any PO questions on existing projects?
+ 
+Deep Linking Appointments (**Status-Yellow**)**-Testing to start via appts team this week.
+ 
+
+* **Standing question for the POs**
+  * Any new work we should be on the lookout for?
+  * Any priority shifts or other updates?
+
+
+* **Sprint Planning**
+   * [Mobile SoS Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/3)
+
+    
+* **Other topics**
+   * QA for Analytics - progress on Spike
+     * This will be worked in the upcoming Sprint (85)
+
+## 10/31/23 Halloween Speical
+
+
+* **Q4 Projects in Progress**
+  * Look at [Kanban board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+  * Work is listed in PO's priority order based on SoS Sprint Tab 
+  * Current Sprint
+    * Sprint 83  (2 of 7 Q4 Sprints) 
+   
+* **Project Status Updates**
+  * Review yellow projects
+  * Any PO questions on existing projects?
+ 
+**Yellow: Deep Linking Appointments**- Currently Blocked Status
+  Summary: 2 Blockers, Resolve in progress
+
+**Blocker 1**
+  Eng:Blocker with Apts API (Retrieving Data with Upstream Service)
+  **Planned Fix:** PR is currently out and we should be unblocked this week
+  
+**Blocker 2:** Testing **(Appointments Team)**
+  Summary: Testing cannot be done in staging but must be done with production test accounts via the appts team
+  
+ **PlannedFix/Next Steps:** Production validation testing will be done (Via the appts team) on various scenarios (**Use Cases provided to the team**)and MSA staff will enter data for us and test with production test accounts 
+
+**Risk:** Blocker 2 is with the appts team. The PO on that team will be informed when items are in production from our team and then will let us know when they are able to test.
+The risk here is time. If timing for that team extends, we may need to make a decision how long do we wait vs. rolling out without testing.
+
+* **Standing question for the POs**
+  * Any new work we should be on the lookout for?
+  * Any priority shifts or other updates?
+
+
+* **Sprint Planning**
+   * [Mobile SoS Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/3)
+
+    
+* **Other topics**
+
+
 
 
 ## 2023 Completed work:
+<details>
+<Summary>Completed Work </Summary>
 
 | Quarter |Project | PM | Status |
 |-------- | ----------- | ----------- | ----------- |
-| Q2 | [CircleCI Migration](https://app.zenhub.com/workspaces/va-mobile-product-view-610035bc5395bb000e62e529/issues/gh/department-of-veterans-affairs/va-mobile-app/4670) | Kelly | COMPLETE |
-| Q2 | [Digital Decision Letters ](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/4290)| Kelly | COMPLETE |
-| Q2 | [Preferred Name & Gender Identification](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/4028) | Meko | COMPLETE |
-| Q2 | [WCAG 2.2 ](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/4228) | Stacy | COMPLETE |
-| Q2 | [Rx](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/5091) | Meko | COMPLETE |
-| Q2 | [Claims Metrics/Pact Act](https://app.zenhub.com/workspaces/va-mobile-product-view-610035bc5395bb000e62e529/issues/gh/department-of-veterans-affairs/va-mobile-app/4078) | Stacy | COMPLETE |
-| Q3 | [Content Management System Sprint 0](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/6071)   | Misty | COMPLETE |
-| Q3 | [Cancel Message Content Auidt**](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/2172) |Stacy | Releasing August |
-| Q3| [SM Realignement with MHV](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/4718) | Adam | Releasing August| 
+|Q2 | [CircleCI Migration](https://app.zenhub.com/workspaces/va-mobile-product-view-610035bc5395bb000e62e529/issues/gh/department-of-veterans-affairs/va-mobile-app/4670) | Kelly | COMPLETE |
+|Q2 | [Digital Decision Letters ](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/4290)| Kelly | COMPLETE |
+|Q2 | [Preferred Name & Gender Identification](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/4028) | Meko | COMPLETE |
+|Q2 | [WCAG 2.2 ](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/4228) | Stacy | COMPLETE |
+|Q2 | [Rx](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/5091) | Meko | COMPLETE |
+|Q2 | [Claims Metrics/Pact Act](https://app.zenhub.com/workspaces/va-mobile-product-view-610035bc5395bb000e62e529/issues/gh/department-of-veterans-affairs/va-mobile-app/4078) | Stacy | COMPLETE |
+|Q3 | [Content Management System Sprint 0](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/6071)   | Misty | COMPLETE |
+|Q3 | [Cancel Message Content Auidt**](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/2172) |Stacy | Releasing August |
+|Q3| [SM Realignement with MHV](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/4718) | Adam | Releasing August| 
+|Q3 | Pre-Needs Burial Claims Sprint 0  | Adam  | Presented |
+|Q3 | [Appointment Refinement: Compensation & Pension](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/4725)  | Meko | 8/1 App release |
+|Q3 | [Deeplinking](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/6037) | Stacy | 2.10.11 RElease - Sept |
+|Q3 |[Appointment: List & Detail content alignment audit](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/5136) | Meko | Readout completed | Aug '23 |
+|Q3| [Finding Medications-Comparitive Analysis](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/6041) | Meko/Lauren | Readout completed | | August '23| 
+|Q3 | [Android SSO Login Update / Custom Tabs](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/5118) | Stacy | 2.11.0 Release Sept 2023 |
+|Q3 | [Proof of Veteran Status](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/4270) | Adam | 10/11/2023 |
+</details>
 
-## Notes
 
+
+
+<details>
+<Summary>Historical Agendas and Meeting Notes </Summary>
+
+## 10/17/23
+
+
+* **Q4 Projects in Progress**
+  * Look at [Kanban board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+  * Work is listed in PO's priority order based on SoS Sprint Tab
+  * PM owner - transitioning to Ameet 
+  * Current Sprint
+    * Sprint 82  (1 of 7 Q4 Sprints) 
+   
+* **Project Status Updates**
+  * Review yellow projects
+     * No yellow projects   
+  * Any PO questions on existing projects?
+     * Meko leaving / transition - Rachel offered her and Ryan as an assistance for and after the transition
+     * Meko provided an update on exisiting work
+        * Appointments
+           * Identified a bug that MHV is looking into - Mobile showing video when its in person
+           * Possibility this is a staging data issue
+           * Ticket created - thread in MHV Slack channel
+        * RX
+           * Continuing to follow-up
+           * Working on a recommendation that will be shared on mobile design channel
+              * Recommending going the Sort route 
+           * Unplanned work
+              * Raquel reached out asking if mobile could smoke test a change they are implementing (mobile not involved with the change)
+              * Mobile does not have production accounts thus cannot smoke test
+              * Uncertain how we can help ; example of unplanned Q4 work that other areas are contacting mobile for       
+ 
+* **Standing question for the POs (Adam)**
+  * Any new work we should be on the lookout for?
+     *  Terms of Use expected to continue
+        * Meko indicated testing has begun on Mobile
+        * Mobile found a bug when redirecting - communicated and shared that with TOU team - they are working on it   
+  * Any priority shifts or other updates?
+     * Travel Reimbursement ending this sprint vs continuing a couple more 
+     * No other changes 
+
+* **Sprint Planning (Adam)**
+   * [Mobile SoS Board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/3)
+      * No concerns with the top projects or the projects currently slated
+      * All areas have extra capacity which will be looked at during planning
+    
+* **Other topics**
+   * Liz - [Sept 23 App Store Review](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/reporting/App-Stores-Reviews/Sept23.md)
+       * Process has been done for 8 months
+       * Looking at 20 key words
+       * 150 - 200 reviews a month with comments
+       * Discussion on how best to integrate app store data with dashboard data - Greta, Liz, and Ameet working on it - Rachel support
+       * Liz encouraged to continue to review during SoS if she wants 
+
+
+## 10/3/23 Agenda
+ * Repurposed for Q3 planning
+ * Contact Kelly Lein / Matt Hall for planning materials, decisions
+
+## 9/19/23 Agenda:
+
+
+* **Q3 Projects in Progress**
+  * Look at [Kanban board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/13)
+     * Removed the table of projects and status updates and moved them to epics on the Kanban board
+     * Able to search on the kanban board project status to see where its at (On Track, Potential Risk, At Risk)   
+  * Yellow projects / Potential Risk
+     * EVSS
+        *   Mobile waiting for fully EVSS transition; once its moved into production and stable then Mobile will switch over
+            * Disability ratings turned on to 100% but had to drop to 50% because of errors
+            * Overall Mobile transition to EVSS is less than 10 points - turn on / monitor the various areas    
+     * Check-In
+        *   No actions for mobile @ this time outside of staying up to date with External teams 
+        *     Conituned blockers from external teams
+        *   Planned Check-In release for today but put on hold because of bugs
+            * Kay working to prioritize the bugs
+        *   Staging tool still blocked as Shane is OOO
+        *   Rachel said she would like a retro with VAOS and Check-In on how we could have done better on this project
+        *   Discussion on prioritizing this project into Q4 given the dependencies
+           * Rachel agreed to the risk and talked about prioritizing work Mobile has more control / less dependencies on    
+
+ 
+* **Standing question for the POs (Adam)**
+  * Any new work we should be on the lookout for?
+     * MHV sign on is being decommissioned on 12/4
+     * Rachel and Ryan are the POs for the Veteran Status for both Mobile and Web  
+  * Any priority shifts or other updates?
+     * None
+  * Other topics
+     * Kelly brought up if there was any additional info on Epic 6721 - Rachel indicated she would know more about 6/21 meeting
+     * Q4 Planning
+        * Monday Kelly is working with POs on defining a list of possible projects; have a meeting planned next week to review with the team
+     * Custom Tab Andoid Login Issue - Rachel asked
+       * Ticket is pending handing to be sized [6736](https://app.zenhub.com/workspaces/va-mobile-60f1a34998bc75000f2a489f/issues/gh/department-of-veterans-affairs/va-mobile-app/6736)
+       * Rachel said to work this bug through standard process when asked if we need to prioritize it in this sprint, Mobile will incorporate into next Sprint (81)
+         
+* **Sprint Planning (Adam)**
+   * No changes from a project standpoint per the POs
+   * Mobile teams to work on leveling out the capacity through standard Sprint Planning process 
+
+* **Monthly Mobile App Review Summary (Liz)**
+   * Liz posted findings in DSVA
+   * Liz asking how to best to use this information moving forward
+      * Rick and only source of sentimental satisfaction
+   * Group discussed adding some kind of feedback throughout the app's feature to learn more specifics
+      * Matt confirmed this is a Sprint 0 Submit Feedback back in April already completed in this ; work has not progressed from here
+      * Clarified this is not In-App recruitment as that focuses on helping Perigean improve their accuracy in selecting people who use the app for research
+   * Liz reviewed the App Store data in [Github](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/va-mobile-app/reporting/App-Stores-Reviews)
+   * Discussion on how to include this - maybe monthly dashboard , regular reviews
+   * Dicussion and agreed consensus that a data dictionary / readme would be helpful for people to use to read and understand the data vs making wrong intreprations
+    
+
+* **Action Items**
+
+
+## 8/22/23 Agenda:
+* **Q3 Projects in Progress**
+  * Yellow projects - Check In and Android Custom Tabs
+     * Check-In (Meko) - still need Appointment team to expose a few fields and provide access to staging tool - Apt team is continuing to work on it 
+     * Custom Tabs (Stacy) - SiS did a fix on their side and Mobile will be re-releasing on 9/12 
+  
+  
+* **Standing question for the POs**
+  * Any new work we should be on the lookout for?
+       * Not on Scrum Board but Terms of Use Sprint 0 - external team will demo this on Thursday
+       * Terms of Use Sprint 0 should be priority one of Sprint 0s and prefer to start this earlier than originally planned
+       * Mobile does not explicitly have to match what other teams are doing
+         * However - need to make sure that changes Web makes does not negatively impact mobile and changes mobile makes does not negatively impact web  
+  * Any priority shifts?
+  * Any updates?
+       * Veteran Status - Rachel - hot off the press 
+         * Just found out before this meeting that per VA Legal we cannot use the term Veteran or Veteran Status given dishonorably discharged (DD) Veterans can currently access this feature 
+           * Rationale - doesn't follow Veteran definition; could lead to legal problems if DD Veteran has something that indicates they are a Veteran ; refered to VA communication toolkit on the web
+         * With this - the recommendation was to change the name to Proof of Military Service then rename to Veteran Status onec DD Vets are prevented from accessing 
+           * Mobile recommended Proof of Service given the length of Proof of Military Service will cause UX issues in the app - Rachel agreed
+           * Mobile also sited concerns with the switching and changes impacting Veterans with cognitive disabilities 
+              * Mobile's recommendation was to hold off releasing until the product works as expected vs pushing it out and making changes
+              * Mobile also concerned with hiding information and from conversation DD Veterans can access some information but just not have it say Veteran
+              * Mobile confirmed BE has access to statuses but FE does not use them to identify DD Vets
+                 * Mobile will need help with understanding what statuses to use and when from external team
+         * Rachel agreed to hold off on how to move forward with Veteran Status based on Mobile feedback and will get back with the Mobile team on next steps   
+ 
+
+
+* **Sprint 79 Planning (Adam)**
+  * SoS [Sprint Tab](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/3)
+     * Several areas over capacity
+     * Rachael is the only QAer next sprint 
+     * New projects
+         *  Remote Disaster Mitigation   
+         *  RX Default list view to show Active 
+     * Projects completed from last sprint - 2.11 release 9/12 
+         * Veteran Status MVP
+     * Conversation on the sprint
+         * Identified that Check-In Mobile work will be limited as we do not have access to testing - Apts is still working on it
+         * Tom confirmed QA is set-up the best way the can to support Rachael being solo QA this sprint
+         * Rachel indicated that we would pull capacity from Claims or the proejct itself
+            * Matt eindicated this was more for small changes and planning for Q4 work
+        * Adam indicated more conversation to happen during Sprint Planning process but have made good progress with the convo    
+ 
+ * **Other items**
+    * Q4 planning timing ? (Adam)
+       * 3 sprints left for Q3 ~7 weeks away from Q4 work
+       * Matt said that Kelly will be leading and coordinate with Jennifer - more information to be shared with Kelly is back from PTO
+       * 10/3 is the full plan review - start at least 2 weeks before hand 
+   * [4420](https://github.com/department-of-veterans-affairs/va-mobile-app/issues/4420)-Truncated address when launching Apple Maps
+     * Next Steps to close the loop
+       - Initial analysis not a mobile app issue, web has not heard of any issues on their end (leverage google maps)
+       - Potential test that Kay has called out in slack is we could try testing with a Staff Veteran at the site.  If this is something we should do; may need PO coordination to set this up.  [See thread](https://dsva.slack.com/archives/CMNQT72LX/p1690220266864609)
+       - There has only been 1 reported instance of this, should we continue to troubleshoot and work to test with this particular site, or is it ok to close this ticket for now and monitor to see if we receive any new inquiries concerning this use case?
+    * Rachel approved to close this out but monitor is this is happening in App store review / Reddit 
+
+
+## 8/9/23 Agenda
+* Q3 Projects in Progress
+   * 3 Yellow projects
+      * Check-In (status from last SoS - related to dependency on other team) 
+      * Customer Tabs - rollback 2.0.9; SiS team is involved - awaiting next steps from them
+      * VHIC - mtg tomorrow in order to get contacts / info in order to get started
+      * Design System Repo - Ryan has a meeting to review the roadmap and get Github staff contact
+* Standing question for the POs
+  * Any new work we should be on the lookout for?
+      * Matt / Seth message from Ericka Robins (not sure of spelling) to get bullet points - both agreed to follow-up
+      * VANotify is doing some work - does not impact mobile / existing notifications
+          * But impacts new notifications - business is looking into it OCTO is staying in touch
+      * Offsite that OCTO is participating in October - will have more info to share after  
+  * Any priority shifts? None
+* Sprint 77 Planning (Adam)
+   * Ryan provided additional details on improving
+      * less of a readout and interested in the conversation on epics being worked on and their tickets
+      * Seth to follow-up with Jennifer on this 
+   * SoS (Sprint Tab)[https://github.com/orgs/department-of-veterans-affairs/projects/823/views/3]
+     * Projects starting: Travel Reimbursement Step 1 , Check-In Unhappy Path Copy, 
+     * Projects expected to fall off - VHIC Step 1, Veteran Status (implementation TBD), Medication Readout, Mobile App Retention Analysis
+     * Matt talked about additional discussion on handling surplus of capacity
+     * Matt mentioned Labs and Test may be in consideration for Q3 (though no planned)
+         * BE Jayson is working with Rachel and could do additional assessments of this and also Travel Pay
+ * Other
+     * Ryan - Just go ahead and put time on my calendar; I appreciate you asking but feel free to just put it on and I will respond or ask for a new time   
+
+ 
 ## 7/25/23 Agenda:
 * Q3 Projects in Progress
-   *  Secure Messaging - Migrate to Re-Engineered MHV APIs
-      * Met with Christy and found they plan to be done with their work by the 1st week of Sept - asking when we could slate the work - earliest would be Sprint 80 (9/13) 
-* Question for the POs
+  * Check-in
+     * Yellow as we continue to be dependent on getting APIs finalized, sycning with Vista for testing confirugation  
+     * Kay and team working on priorities 
+     * Rachel asked how we could be better in handling situations like this
+        * Meko mentioned that we need to identify dependencies upfront and make sure external times are aligned and on the same roadmap 
+        * Meko also mentioned we are learning at the same time especially on the testing side 
+  * Appointments
+     * Call out that apopintment space is very complex
+     * Facilities have their own business rules and can be different
+     * Focus on appointment specific vs organization specific  
+  * Deeplinking
+     * Narin the only person to send messages for push notifcations
+     * Narin had access issues that delayed testing 1-2 days
+     * Potential issue with VANotify schema issue - working to debug but may need external coordination
+     * Ryan said to pull him in if needed
+     * Narin sent Rachel Han a form to sign to get Rachael and Theo access for testing
+         * Rachel H noticed it was 2 years old and wanted to verify its the correct form
+         * Narin confirmed and is working with a MHV PM who has helped on similar asks in the past
+         * Rachel H to submit today 7/25 
+  * Biometric bug 5986 update (Jayson)
+     * Not the issue Tim Wright is working on
+     * Jayson doesnt not believe is biometrics specific
+     * When signing in there is an auto upgrade process to premium - sometimes this auto upgrade does not work
+         * Web experiences this issue as well
+         * Believe the root cause is related to the upgrade process
+     * Jayson working with Identity on this
+     * Rachel asked we should see what Web is doing to work around this and see if we can apply something similar
+         * Jayson confirmed once we get more information from Identity we can review our options to resolve   
+
+* Standing question for the POs
    * Any new work we should be on the lookout for?
+      * Transition from RxR App to Flagship
+      * Matt / Rachel have been talking - need to discuss with team to discuss scope
+           * Only expect PM capacity to be impacted and maybe data to track metrics during transition and possibly coordinate with web to align
+      * Analytics
+          * Align priority with Phase 0 work which can be found in MHV-on-vagov-portal-home channel in their favorites
+             * [Phase Mural](https://app.mural.co/t/departmentofveteransaffairs9999/m/departmentofveteransaffairs9999/1667322271773/26b9a1c19e3d4f1dbcc1dba4e4218a56f0fbb75a?sender=u7ec1ac1ea3bde48882e36908)
+             * Product to review and align with this
+     * Veteran Stauts Card
+          * VA got confirmation that other health systems in the private sector will accept this form of id to get medical care/  treatment
+          * Calling this out to re-enforce its value
+     * Rachel (PO) to pull in Jayson as needed to help find information
+          * Travel Reimbursement - Rachel and Kay meeting Thursday
+          * Labs and tests - Jayson shared discovery done a year ago
+               * That discovery may be outdated as all API MHV Medical Records are moving to Fire (Lighthouse) however Jayson indicated it includes details on Lighthouse APIs in that doc
+               * Rachel Question for Jen / Ryan to consider - how much do we know as to what Veterans want to see in labs and tests froma mobile debice
+                   * May need to consider mobile research and piggyback off Thanksgiving 2022 web research
+                   * Ryan has seen comps from that and feels its just waiting to be built - not a lot of complexity
+                   * Discussion on sharing and downdloading - need to consider impact with large documents (hundreds of pages)
+                   * Lauren to follow up with Jen on this topic  (Lauren completed see [Slack](https://adhoc.slack.com/archives/C02CTV4JN0J/p1690314234091539)
+                   * Greta mentioned completing access needs to get access to cover the metrics side of this work
+                   * Reinforcement that just because web did it does not mean Mobile has to
+                   * Liz call out some initial findings from research - Vet agency and cointuation of care especially for mobile (homeless vets) more info to be shared in research findings at next demo
    * Any priority shifts?
+      * None
 * Sprint 77 Planning (Adam)
-   * Review [Sprint 76 SoS board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/3) to see what is currently slated
+   * Review [Sprint 77 SoS board](https://github.com/orgs/department-of-veterans-affairs/projects/823/views/3) to see what is currently slated
+   * No priority changes
+   * Discussions on Check-In and impact being delayed
+   * Discussions on how to use extra capacity
+      * Indicated disciplines leads are discussiong - Matt confirmed 
 
 ## 7/18/23 Agenda: 
  * SoS is being used this day for Sprint Planning for Sprin 76
@@ -311,3 +871,5 @@ Discussion Items
   * Currently we get tracking info from CMOP - not sure if this change is adding to this or something different
   * New content disclosure needs to be displayed?
 * RX Research concluded, findings and recommendations to come
+
+</details>

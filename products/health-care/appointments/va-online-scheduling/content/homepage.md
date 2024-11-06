@@ -4,9 +4,7 @@
 
 **NAVIGATION**
 
-New URL: `https://va.gov/my-health/appointments`
-
-Current URL: `https://va.gov/health-care/schedule-view-va-appointments/appointments`
+URL: `https://va.gov/my-health/appointments`
 
 Page title: `[Page Header] | Veterans Affairs`
 
@@ -35,9 +33,9 @@ Breadcrumb: `VA.gov home > My HealtheVet > Appointments`
 ### Upcoming state - empty
 
 ```
-You don't have any upcoming appointments
+{Heading} You don't have any upcoming appointments
 
-You can schedule an appointment online now, or call your VA medical center to schedule an appointment.
+You can schedule an appointment online now, or call your {Link}VA health facility{/Link} to schedule an appointment.
 
 {Link} `Schedule an appointment`
 ```
@@ -45,11 +43,30 @@ You can schedule an appointment online now, or call your VA medical center to sc
 ### Upcoming alert - Generic message if any of the systems are unavailable (VSP, VVS and HSRM) 
 
 ```
-(H1) We can't display all your appointments.
+{H1} We can't display all your appointments.
 
-(H2) We're working to resolve this issue.  To manage an appointment that is not shown in this list, contact the facility at which it was scheduled.
+{H2} We're working to resolve this issue.  To manage an appointment that is not shown in this list, contact the facility at which it was scheduled.
 
 {link} Facility locator 
+```
+
+### Upcoming alert - Cerner redirect
+
+```
+{H2} To manage appointments at these facilities, go to My VA Health
+
+- [Cerner facility]
+- [Cerner facility]
+
+{Action link} Go to My VA Health
+
+{Additional info title} Having trouble opening My VA Health?
+
+{Additional info content}
+    Try these steps:
+    - Disable your browser's pop-up blocker
+    - Sign in to My VA Health with the same account you used to sign in to VA.gov
+{End additional info content}
 ```
 
 ---
@@ -58,11 +75,9 @@ You can schedule an appointment online now, or call your VA medical center to sc
 
 **NAVIGATION**
 
-New URL: `https://va.gov/my-health/appointments/requests`
+URL: `https://va.gov/my-health/appointments/pending`
 
-Current URL: `https://va.gov/health-care/schedule-view-va-appointments/appointments/pending`
-
-Page title: `Requests | Veterans Affairs`
+Page title: `[Page header] | Veterans Affairs`
 
 Breadcrumb: `VA.gov home > My HealtheVet > Appointments > Pending appointments`
 
@@ -72,8 +87,11 @@ Breadcrumb: `VA.gov home > My HealtheVet > Appointments > Pending appointments`
 
 **PAGE CONTENT**
 
-These appointment requests haven’t been scheduled yet.
-
+```diff
+- These appointment requests haven’t been scheduled yet.
++ Appointments that you request will show here until staff review and schedule them.
+@@GH71716@@
+```
     [Secondary Nav]
         (Link) Upcoming  
         (Link - Selected) Pending (#)  
@@ -94,11 +112,15 @@ These appointment requests have been canceled.
 
 ### Request state - empty
 
-You don't have any appointment requests
+```
 
-You can schedule an appointment online now, or call your VA medical center to schedule an appointment.
+{Heading} You don't have any appointment requests
 
-(Link) `Schedule an appointment`
+If you request an appointment it will show here until staff review and schedule it. You can schedule an appointment online now, or call your {link}VA health facility{/link} to schedule an appointment.
+
+```
+
+{Link} `Schedule an appointment`
 
 
 ### Request alert - Generic message if any of the systems are unavailabe (VSP, VVS and HSRM) 
@@ -117,9 +139,7 @@ You can schedule an appointment online now, or call your VA medical center to sc
 
 **NAVIGATION**
 
-New URL: `https://va.gov/my-health/appointments/past`
-
-Current URL: `https://va.gov/health-care/schedule-view-va-appointments/appointments/past`
+URL: `https://va.gov/my-health/appointments/past`
 
 Page title: `[Page Header] | Veterans Affairs`
 
@@ -164,11 +184,11 @@ Breadcrumb: `VA.gov home > My HealtheVet > Appointments > Past appointments`
 ### Past state - empty
 
 ```
-You don't have any past appointments
+{Heading} You don't have any past appointments
 
-You can schedule an appointment online now, or call your VA medical center to schedule an appointment.
+You can schedule an appointment online now, or call your {link}VA health facility{/link} to schedule an appointment.
 
-(Link) `Schedule an appointment`
+{Link} `Schedule an appointment`
 ```
 
 ### Past alert - Generic message if any of the systems are unavailabe (VSP, VVS and HSRM) 

@@ -14,18 +14,102 @@ Veterans use this list to get a quick understanding of their upcoming appointmen
 ## Requirements
 
 **Functional**
-- Display all supported appointment types [LINK TBD].
-- Display 13 months of future booked appointments.
-- Display 13 months of canceled booked appts.
 
-## User interface design
+- User can review a summary of their upcoming appointments.
+- Upcoming appointments are sorted starting from most recent to furthest in the future.
+- User can navigate to the details for all appointments in the summary list.
+- User can print the summary list.
+- When the user has no upcoming appointments, a message must display to the user informing them of this.  
+- When any of the backend services fails to retrieve appointments (VSP for VistA, HSRM for community care appointments and VVS for video appointments) an alert must display to the user informing them that not all appointments can be displayed.
+
+
+**Appointments displayed**
+
+Display future booked appointments in the upcoming list: 
+- Display appointments when they are created
+     - `vaos service` updates the appointment list in real time. On the FE, we call the appointment list endpoint to pull the latest list after appointment creation.
+- Display telehealth the appointments in the upcoming list for 240 mins / 4hours after start time 
+- Display non-telehealth appointments in the upcoming tab for 60 mins after the start time.
+    - Once these timeframes have passed, display these appointments in the past list
+- All community care upcoming and canceled upcoming appointments from the Health Systems Referral Manager (HSRM) within the next 395 days (13 months) must display.
+- All VA/VistA upcoming and canceled upcoming appointments for the user from any Veteran-registered VistA system within the next 395 days (13 months) display EXCEPT for those where the clinic has any of the following:   
+    - The clinic name matches a community care clinic name regular expression that is part of the MAS configuration: `"((COM CARE-.)|(NON VA CARE .))`  https://issues.mobilehealth.va.gov/browse/CKM-1181
+    - Clinic's stop code in on the Office of Integrated Veteran Care's stop code exclusion list
+    - Clinic location name that starts with `ZZ` in the VistA site's Hospital Location file #44
+    - Clinic location name that ends with -X in the VistA site's Hospital Location file #44
+    - Clinic's `DISPLAY CLIN APPT TO PATIENTS? = NO` in the VistA site's Hospital Location file #44
+    - Clinic's `DISPLAY CLIN APPT TO PATIENTS? = NULL` in the VistA site's Hospital Location file #44
+- All upcoming and cancelled video visit appointments from Telehealth Management Platform (TMP) within the next 395 days (13 months) must display.  
+- All upcoming video visit appointments from Virtual Care Manager (VCM) within the next 395 days (13 months) must display.  (Note: canceled upcoming VCM appointments do NOT display).
+- No requests are displayed.
+- Note: Future appointments that have been canceled display in the list so the Veteran has a record of the appointment when the facility cancels it.
+
+ **Data displayed**
+- For each appointment, the following data is displayed:
+
+|   Data                                  | VA upcoming/past | CC upcoming/past |
+| --------------------------------------- | ---------------- | ---------------- |
+| Appointment Date and Time               | ✅                | ✅                |
+| Type of Care (see note)                 | ✅                | ✅                |
+| Provider Name                           | ✅                | ✅                |
+| Mode of Attendance                      | ✅                |                  |
+| Facility Name or ATLAS Facility Address | ✅                |                  |
+| Link to Details                         | ✅                |                  |
+
+Appointment Date and Time
+- The time displayed is in the facility's time zone.
+
+Type of care
+- If Type of Care is not available for VA appointments, display "VA appointment"
+  - See technical notes: [Type of care](../../../appointments-reference/data-reference/data-definitions.md#type-of-care)
+- The type of care for [Community care appointments](../appointment-types/community-care.md) must display "Community care appointment with `[Provider Name]` provider".
+
+**Modality indicators**
+- A modality icon must display for each appointment:
+    - A telephone icon must display for a [telephone appointment](../appointment-types/va-phone.md).     
+    - An in-person person/building icon must display if any of the following are true:
+        - The appointment is an [in-person appointment at a VA facility](../appointment-types/va-in-person.md) 
+        - The appointment is a [video appointment at a VA facility](../appointment-types/va-video-care-at-a-va-location.md)
+        - The appointment is a [video appointment at an ATLAS location](../appointment-types/va-video-care-at-atlas-location.md)
+    -  A video visit icon must display if any of the following are true
+        - The appointment is a [video appointment at home](../appointment-types/va-video-care-at-home.md)
+        - The appointment is a [video appointment on a VA device](../appointment-types/va-video-care-on-gfe.md)
+        - The appointment is a VA appointment made in a clinic with a video visit secondary stop code of defined by IVC as telehealth/video must display.  [List of stop codes.](https://coderepo.mobilehealth.va.gov/projects/MACM/repos/vaec-map-consul-staging-tf-appconfigs/browse/mobile-appointment-service.tf?at=refs%2Fheads%2Fsqa#65)  
+    -  In lieu of a modality icon `Community care` must display for Community Care appointments.
+ 
+### Technical notes
+- Once the user lands on the VAOS homepage,  the appointment endpoint returns future booked appts (previous month through  1yr from next month) and proposed appt (3 months prior through next month) which contains locationID aka the facilityID (ie  984) along with the facility name (Dayton VA Medical Center). 
+- In VistA, all appointments are tied to an appointment request.  VAOS displays all types of appointments.  A user may cancel an appointment in VAOS that could be tied to a `Veteran`, `APPT`, `Consult`, `Return to Clinic`, `Procedure` requests type and canceling that appointment must reopen the original appointment request. The default cancel reason in VAOS is UNABLE TO KEEP APPOINTMENT and in VistA this reason has REOPEN REQUEST UPON CANCEL: YES.   
+- Office of Integrated Veteran Care's  (OIVC) stop code exclusion list is updated regularly as a MAS consul value with codes provided to the dev team by the OIVC.
+- When VAR/VAOS was first rolled out (circa 2015) two new REQUIRED fields were introduced: `DIRECT PATIENT SCHEDULING?` and, `DISPLAY CLIN APPT TO PATIENTS?`. There was NOT a post install to populate these required fields on existing clinics.  So, there could be clinics in production where these two data fields are `NULL`.  
+-  Telehealth (example stop code `179 RT CLIN VID CARE HOME`) is always secondary to primary type of care (e.g., `323`). 
+-  Clinics with a secondary stop code  `179 RT CLIN VID CARE HOME` always have `kind = Telehealth` which means the appointment will display as a video visit.  
+- Video visit appointments with missing links are created when: 
+    - VAMC staff schedules into a clinic using VSE GUI with a telehealth stop code and answers "No" to the prompt "Would you like to create a Video Visit" OR 
+    - VAMC staff schedules into a clinic using VSE GUI with a telehealth stop code that is not in the SDEC Setting file.  As a result the "Would you like to create a Video Visit" prompt is not displayed to VAMC staff.  
+    - VAMC staff use VistA Roll and Scroll, Appointment Management and book into a clinic with secondary telehealth stop code OR 
+    - VAMC staff have configured a clinic that has secondary telehealth stop code for direct scheduling and veteran self-schedules into that clinic.  
+    - Telephone is always a primary stop code, never a secondary -- e.g., user would create a telephone clinic with either no secondary or primary care as a secondary stop code. There are several stop codes for telephone.  See https://issues.mobilehealth.va.gov/browse/EAS-1425.
+- Leah 3/16/23: VAOS FE code is no longer calling the provider's endpoint in the backend when viewing the pending appointment details page. This addresed an invalid NPI issue. 
+    
+
+
+## Specifications
 
 [User flow](https://www.figma.com/file/xRs9s6QWoBPRhpdYCGc3cV/User-Flow?node-id=2019-19997&t=jIup4zOCLhBYNOvO-4) 
 
 [Page template](https://www.figma.com/file/twogqAIoOL9WAFRqvUbwiS/VAOS-Templates?type=design&node-id=2287%3A43222&t=0TibHujNgvUjrD7t-1)
 
-[Page content](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/appointments/va-online-scheduling/content/copy-docs/homepage.md#appointment-list-cards)
+[Page content](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/appointments/va-online-scheduling/content/homepage.md#upcoming-appointments)
 
+## Alerts and conditional states
+<!-- Any alerts that could display for this feature and what triggers them. -->
+
+**Alert UI**
+- [User flow](https://www.figma.com/file/xRs9s6QWoBPRhpdYCGc3cV/User-Flow?type=whiteboard&node-id=3281-3294&t=rlUNz5oWE30aEgSO-4)
+- [State template](https://www.figma.com/file/twogqAIoOL9WAFRqvUbwiS/VAOS-Templates?type=design&node-id=2418-51946&mode=design)
+- [State content](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/appointments/va-online-scheduling/content/homepage.md#upcoming-alert---generic-message-if-any-of-the-systems-are-unavailable-vsp-vvs-and-hsrm)
+- 
 ## Metrics
 <!--Goals for this feature, and how we track them through analytics-->
 
@@ -91,7 +175,7 @@ Generic error when appointment list can't be displayed due to:
 
 To see the current api responses:
 - Navigate to the [vets-api swagger](https://department-of-veterans-affairs.github.io/va-digital-services-platform-docs/api-reference/#/)
-- Search for `https://api.va.gov/vaos/v2/apidocs`
+- Search for or paste this url in the explore bar `https://api.va.gov/vaos/v2/apidocs`
 
 <details>
   <summary>Sample response</summary>
@@ -132,94 +216,163 @@ To see the current api responses:
                 "display": "REGULAR"
               }
             ],
-            "text": "REGULAR"
-          }
-        ],
-        "patientIcn": "<ICN>",
-        "locationId": "983",
-        "clinic": "437",
-        "start": "2023-03-15T20:00:00Z",
-        "end": "2023-03-15T20:30:00Z",
-        "created": "2023-03-17T00:00:00Z",
-        "requestedPeriods": [
-          {
-            "start": "2023-03-15T00:00:00Z",
-            "end": "2023-03-15T00:00:00Z"
-          }
-        ],
-        "cancellable": true,
-        "extension": {
-          "ccLocation": {
-            "address": {}
-          },
-          "vistaStatus": [
-            "NO ACTION TAKEN"
-          ]
-        },
-        "serviceName": "CHY VISUAL FIELD",
-        "friendlyName": "VISUAL FIELD",
-        "location": {
-          "id": "983",
-          "type": "appointments",
-          "attributes": {
-            "id": "983",
-            "vistaSite": "983",
-            "vastParent": "983",
-            "type": "va_facilities",
-            "name": "Cheyenne VA Medical Center",
-            "classification": "VA Medical Center (VAMC)",
-            "timezone": {
-              "timeZoneId": "America/Denver"
-            },
-            "lat": 39.744507,
-            "long": -104.830956,
-            "website": "https://www.denver.va.gov/locations/directions.asp",
-            "phone": {
-              "main": "307-778-7550",
-              "fax": "307-778-7381",
-              "pharmacy": "866-420-6337",
-              "afterHours": "307-778-7550",
-              "patientAdvocate": "307-778-7550 x7517",
-              "mentalHealthClinic": "307-778-7349",
-              "enrollmentCoordinator": "307-778-7550 x7579"
-            },
-            "physicalAddress": {
-              "type": "physical",
-              "line": [
-                "2360 East Pershing Boulevard"
+            "text": "REGULAR",
+            "reasonCode": {
+              "coding": [
+                {
+                  "code": "Routine Follow-up"
+                }
               ],
-              "city": "Cheyenne",
-              "state": "WY",
-              "postalCode": "82001-5356"
+              "text": "string"
             },
-            "mobile": false,
-            "healthService": [
-              "Audiology",
-              "Cardiology",
-              "DentalServices",
-              "EmergencyCare",
-              "Gastroenterology",
-              "Gynecology",
-              "MentalHealthCare",
-              "Nutrition",
-              "Ophthalmology",
-              "Optometry",
-              "Orthopedics",
-              "Podiatry",
-              "PrimaryCare",
-              "SpecialtyCare",
-              "UrgentCare",
-              "Urology",
-              "WomensHealth"
-            ],
-            "operatingStatus": {
-              "code": "NORMAL"
+            "priority": 0,
+            "patientIcn": "<ICN>",
+            "locationId": "983",
+            "clinic": "437",
+            "serviceName": "CHY VISUAL FIELD",
+            "friendlyName": "VISUAL FIELD",
+            "location": {
+              "id": "983",
+              "type": "appointments",
+              "attributes": {
+                "id": "983",
+                "vistaSite": "983",
+                "vastParent": "983",
+                "type": "va_facilities",
+                "name": "Cheyenne VA Medical Center",
+                "classification": "VA Medical Center (VAMC)",
+                "timezone": {
+                  "timeZoneId": "America/Denver"
+                },
+                "lat": 39.744507,
+                "long": -104.830956,
+                "website": "https://www.denver.va.gov/locations/directions.asp",
+                "phone": {
+                  "main": "307-778-7550",
+                  "fax": "307-778-7381",
+                  "pharmacy": "866-420-6337",
+                  "afterHours": "307-778-7550",
+                  "patientAdvocate": "307-778-7550 x7517",
+                  "mentalHealthClinic": "307-778-7349",
+                  "enrollmentCoordinator": "307-778-7550 x7579"
+                },
+                "practitioners": [
+                  {
+                    "identifier": [
+                      {
+                        "system": "string",
+                        "value": "string"
+                      }
+                    ],
+                    "name": {
+                      "family": "string",
+                      "given": [
+                        "string"
+                      ]
+                    },
+                    "address": {
+                      "type": "postal",
+                      "line": [
+                        "string"
+                      ],
+                      "city": "string",
+                      "state": "string",
+                      "postalCode": "string",
+                      "country": "string",
+                      "text": "string"
+                    }
+                  }
+                ],
+                "start": "2024-10-11T17:47:03.902Z",
+                "localStartTime": "2024-10-11T17:47:03.902Z",
+                "end": "2024-10-11T17:47:03.902Z",
+                "minutesDuration": 0,
+                "slot": {
+                  "id": "string",
+                  "start": "2024-10-11T17:47:03.902Z",
+                  "end": "2024-10-11T17:47:03.902Z"
+                },
+                "created": "2024-10-11T17:47:03.902Z",
+                "preferredLocation": {
+                  "city": "string",
+                  "state": "string"
+                },
+                "requestedPeriods": [
+                  {
+                    "start": "2024-10-11T17:47:03.902Z",
+                    "localStartTime": "2024-10-11T17:47:03.902Z",
+                    "end": "2024-10-11T17:47:03.902Z"
+                  }
+                ],
+                "contact": {
+                  "telecom": [
+                    {
+                      "type": "email",
+                      "value": "string"
+                    }
+                  ]
+                },
+                "preferredTimesForPhoneCall": [
+                  "Morning"
+                ],
+                "cancelationReason": {
+                  "coding": [
+                    {
+                      "code": "Routine Follow-up"
+                    }
+                  ],
+                  "text": "string"
+                },
+                "description": "string",
+                "comment": "string",
+                "preferredLanguage": "string",
+                "cancellable": true,
+                "patientInstruction": "string",
+                "telehealth": {
+                  "url": "string",
+                  "group": "string",
+                  "vvsKind": "string",
+                  "atlas": {
+                    "siteCode": "string",
+                    "confirmationCode": "string",
+                    "address": {
+                      "streetAddress": "string",
+                      "city": "string",
+                      "state": "string",
+                      "zipCode": "string",
+                      "country": "string",
+                      "latitutde": 0,
+                      "longitude": 0,
+                      "additionalDetails": "string"
+                    }
+                  }
+                },
+                "extension": {
+                  "desiredDate": "2024-10-11T17:47:03.902Z",
+                  "ccLocation": {
+                    "practiceName": "string",
+                    "address": {
+                      "type": "postal",
+                      "line": [
+                        "string"
+                      ],
+                      "city": "string",
+                      "state": "string",
+                      "postalCode": "string",
+                      "country": "string",
+                      "text": "string"
+                    }
+                  },
+                  "ccRequestedCancellation": true
+                },
+                "preferredProviderName": "string",
+                "avsPath": "string"
+              }
             }
           }
-        }
+        ]
       }
-    },
-    
+    }
   ],
   "meta": {
     "pagination": {

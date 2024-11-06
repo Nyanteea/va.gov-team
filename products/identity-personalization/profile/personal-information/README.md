@@ -1,6 +1,6 @@
 # Product outline: Personal information in the VA.gov profile
 
-Last Updated: October 12, 2022
+**Last Updated:** February 15, 2024 (removed Sketch links)
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ Last Updated: October 12, 2022
 - **Slack channel**: [#accountexp-authexp](https://dsva.slack.com/channels/accountexp-authexp); [#va-profile](https://dsva.slack.com/channels/va-profile)  
 ### Authenticated experience
 
-- [This is currently managed by the VA.gov profile team](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/profile/README.md#roles).
+- [This is currently managed by the VA.gov profile team](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/README.md#team).
 
 ### VA Profile
 
@@ -70,7 +70,7 @@ As a user, I want to be able to:
 
 ## Projects
 
-- [Personal information revisions](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/profile/personal-information/personal-information-revision/README.md)
+[For a list of current and past projects, please refer to the Profile section outline](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/profile/README.md#projects).
 
 ## Analytics
 
@@ -133,10 +133,9 @@ Needs to be filled out by Adam.
 
 ## Design & UX
 
-- [Personal information sketch files](https://www.sketch.com/s/ba254d92-3c3d-4eba-825d-d7f5bda35565)
+- [Design files](https://www.figma.com/file/qfyUmEOVawplgrEKYKFp0f/Profile---Personal-information?type=design&node-id=0%3A98&mode=design&t=ZBL2UgsSlzGXuQlA-1)
 - [Use cases](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/identity-personalization/profile/personal-information/use-cases)
 - [Personal information revision UX decisions](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/profile/personal-information/personal-information-revision/design/personal-info-ux-decisions.md)
 
 ### Flow diagrams
-
-- [High-level add/edit flow with screenshots](https://www.sketch.com/s/ba254d92-3c3d-4eba-825d-d7f5bda35565/p/8E8C2FD5-BE91-45C2-BD5F-D71E27903187/canvas)
+- [Mobile page design file](https://www.figma.com/file/qfyUmEOVawplgrEKYKFp0f/Profile---Personal-information?type=design&node-id=0%3A98&mode=design&t=ZBL2UgsSlzGXuQlA-1) shows the user flow

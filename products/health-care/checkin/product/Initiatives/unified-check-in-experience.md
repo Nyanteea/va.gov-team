@@ -2,7 +2,7 @@
 
 ## Overview
 
-This initiative comprises a number of enhancements to the online check-in applications. These enhancements aim to reduce the confusion among Veterans and staff of the difference between and purpose for the pre-Check-in and check-in workflows. These enhancements consist of a number of planned releases, each of which will help to solve this problem. All enhancements may not necessarily be needed to achieve the desired outcome, which is to increase the use of the online check-in applications. The team will monitor feedback after each release and work with our VA Product Owner to determine when our objective has been achieved.
+This initiative comprises a number of enhancements to the online check-in applications. These enhancements aim to reduce the confusion among Veterans and staff of the difference between and purpose for the pre-Check-in and check-in workflows. These enhancements consist of a number of planned Prioritys, each of which will help to solve this problem. All enhancements may not necessarily be needed to achieve the desired outcome, which is to increase the use of the online check-in applications. The team will monitor feedback after each Priority and work with our VA Product Owner to determine when our objective has been achieved.
  
 ## Outcome Summary
 Veterans will have a better understanding of the tasks they need to complete before a health appointment and the differences between the two online check-in applications will become irrelevant.
@@ -35,62 +35,107 @@ The following changes, as compared to historical levels, will serve as key perfo
 ## Launch Planning
 
 ## Workflow
-[Unified Check-in Experience Workflow](https://www.sketch.com/s/0e890de3-2530-4ee0-986e-cf0314334aec/p/0EC89917-F949-4461-A7B3-32A5201FD2A2/canvas)
+[Basic User Flow](https://www.sketch.com/s/0e890de3-2530-4ee0-986e-cf0314334aec/p/0F9F62F0-68A0-4C8B-9105-A92D0A6448DB/canvas)
 
 ### Collaboration Cycle
 - [Collab Cycle Ticket](https://github.com/department-of-veterans-affairs/va.gov-team/issues/53488)
 
 ### Initiative Rollout
-We will be implementing this initiative using the following releases:
-- Release 1 
-     - Check-in 45 min text message
-- Release 2
-    - Update Pre-Check-in text message
-    - Update heading & body text on Login page for Pre-Check-in & Check-in
-    - New landing page for Check-in & pre-check-in in this format
-        - What to do now - task corresponding to the link clicked
-         - Upcoming Appointments
-                 - Including the ability to see the check-in status, but restyled (because these exist today)
-                 - Excluding pre-check-in status for each appointment 
-                 - Excluding the ability to complete tasks for other appts
-     - Update H1 and body text on completion pages for Pre-Check-in & Check-in
-     - Content tweak in background info alert on pre-check-in confirmation page
-- Release 2.1
-     - Add ability to see pre-check-in detail appt page w/ "review your information now" call to action
-     - Restyle check in button to action link on detail page for check in 
-- Release 3
-    - New completion page for check-in & pre-check-in (phone & in-person)
-	  - Design tweaks
-	  - New message based on the following scenarios
-	      - Clicked on "Review your info" & answered Yes to all questions
-	      - Clicked on "Review your info" & answered No to at least 1 question
-          - New link to get back to the new landing page (minus the message of other tasks to do)
-          - Add eyebrow into pre-check-in
-- Release 4
-    - New message page for info is up-to-date & clicked the pre-check-in link
-        - [WF link](https://www.sketch.com/s/0e890de3-2530-4ee0-986e-cf0314334aec/a/uuid/8BDCA2AE-00CE-4162-BEDE-9D0B349E24E6)
-    - New error pages in this format (excludes login errors);
-        - Message - message for the task corresponding to the link clicked
+We will be implementing this initiative using the following Prioritys:
+
+#### 45-minute reminder & associated Pre-Check-in content (IN PROGRESS)
+- Status - done but not released
+- Artifacts:
+	- [Detailed release notes](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/checkin/release-plan/detailed-release-notes/45-minute-check-in-text.md)
+  	- [Epic](https://github.com/department-of-veterans-affairs/va.gov-team/issues/61390) & [Wireframes](https://www.sketch.com/s/0e890de3-2530-4ee0-986e-cf0314334aec/p/0D0F05D2-2122-4599-9378-E03EEE32DB88/canvas)
+- Description
+	- Send out 45-minute Check-in Text Reminder with Check-in Link
+	- Add messaging to Pre-Check-in completion page that a text will be sent to the Veteran when it's time to check-in
+
+#### Priority 1: New landing page & accompanying content changes (IN PROGRESS)
+- Status - in progress
+- Artifacts:
+	- [Detailed release notes](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/checkin/release-plan/detailed-release-notes/unified-check-in-priority-1.md)
+  	- [Epic](https://github.com/department-of-veterans-affairs/va.gov-team/issues/63466) & [Wireframes](https://www.sketch.com/s/0e890de3-2530-4ee0-986e-cf0314334aec/p/868762F3-8E8F-4E23-B0DA-34C1783F0A03/canvas)	
+- Details
+	- Pre-Check-in
+	    - Text Message: new content
+	    - Login Page: new H1 & body content 
+	    - Landing Page: new Landing page format
+	        - Show pre-check-in task in new card component and "What to do next" heading
+	        - If demos don't need review, change WF to show landing page w/ dismissible alert, that corresponds to the appt for the link clicked (different alert for grouped appts)
+	        - Display all upcoming appointments
+	        - Details link for each appt
+	        - Don't show statuses within appt list
+	        - No going back to upcoming appts list page after pre check in complete
+	    - Completion Page: 
+	        - New H1 content (different for grouped appts)
+	        - First accordion not visible if answered Yes to all demo questions. Accordions should not have any work to be done. 
+	- Day-of Check-in
+	    - Text Message: new content
+	    - Login Page: new H1 & body content
+	    - Landing Page: New Landing page format
+	        - Show check in task in new card component and "What to do next" heading 
+	        - If demos don't need review and there's no travel questions shown, show check-in task in new card component and "What to do next" heading. When Veterans selects "check in now" in the card component, take them to this [confirmation page](https://www.sketch.com/s/0e890de3-2530-4ee0-986e-cf0314334aec/a/pY4ZOjQ#Version). 
+	        - Two card components can be show in the "What to do next" heading if Veteran is within two windows. The 1st card should be specific to the text that was clicked. 
+	        - Display all upcoming appointments
+	        - Details link for each appt
+	        - DO show statuses (but only certain ones) on appt list. Statuses have changed design pattern. 
+	        - Do not show next task if task was completed and user is navigating from the Completion page back to the appointment list page
+	    - Completion Page: 
+	        - Add link back to Landing page
+
+#### Priority 2: Minor updates to Details page (TENTATIVE)
+- Add ability to see pre-check-in detail appt page w/ "review your information now" call to action
+- Restyle check in button to action link on detail page for check in 
+
+#### Priority 3: New completion page format & updates to demographics pages (TENTATIVE)
+- New completion page for check-in & pre-check-in (phone & in-person)
+	- Design tweaks
+	- New message based on the following scenarios
+		- Clicked on "Review your info" & answered Yes to all questions
+	      	- Clicked on "Review your info" & answered No to at least 1 question
+  	- New link to get back to the new landing page (minus the message of other tasks to do)
+        - Add eyebrow into pre-check-in
+        - New expandable control to show what to do if demographics info is no up-to-date
+- Update to demographics pages to show what to do if demographics info is NOT up-to-date
+
+#### Priority 4: New message and error page formats (TENTATIVE)
+- New message page for info is up-to-date & clicked the pre-check-in link
+- New error pages in this format (excludes login errors);
+	- Message - message for the task corresponding to the link clicked
         - Upcoming Appointments
-             - Excluding the ability to see the check-in/pre-check-in status for each appointment
-             - Excluding the ability to complete tasks for other appts
--  Release 5
-    - Ability to see the action status for each upcoming appointment (both on the details page & the appointments page) (this includes if you have already completed the action or when you can do it)
-- Release 6
-    - Ability to complete a task for an appointment NOT associated with the link clicked
-        - NOTE: we will need to ensure that status's are set properly so that the Veteran does not receive more pre-check-in reminders & VSECS is updated as well
-    -  Update completion page for pre-check-in (phone & in-person)
-	  - New message based on the following scenarios
-	      - Clicked on "Confirm your appointment"
-- Release 7
-    - Updated details page
-        - Design tweaks to statuses
-       - Adding the confirm action for pre-check-in
-- Release 8
-    - Changes to Need Help
-    - [Change alert on travel pages to additional info component](https://app.zenhub.com/workspaces/check-in-experience-61fc23a2cb8a14001132e102/issues/gh/department-of-veterans-affairs/va.gov-team/59126) 
-- Release 9
-    - Allow Veterans to access Pre-Check-in & Check-in regardless if the link has expired or they have no appointments for today (can we re-generate the LoROTA entry for some limited time period? does this affect the ATO?)
+        	- Excluding the ability to see the check-in/pre-check-in status for each appointment
+             	- Excluding the ability to complete tasks for other appts
+
+#### Priority 5: View action statuses in the upcoming appointments list (TENTATIVE)
+- Ability to see the action status for each upcoming appointment (both on the details page & the appointments page) (this includes if you have already completed the action or when you can do it)
+
+#### Priority 6: Ability to complete a task from the upcoming appointments list (TENTATIVE)
+- Ability to complete a task for an appointment NOT associated with the link clicked
+	- NOTE: we will need to ensure that status's are set properly so that the Veteran does not receive more pre-check-in reminders & VSECS is updated as well
+-  Update completion page for pre-check-in (phone & in-person)
+	- New message based on the following scenarios: clicked on "Confirm your appointment"
+
+#### Priority 7: Updates to Details page (TENTATIVE)
+- Details page
+	- Design tweaks to statuses
+       	- Adding the confirm action for pre-check-in
+
+#### Priority 8: Updates to Need help section (IN PROGRESS)
+- Status - released to production 
+- Artifacts
+	- [Epic](https://github.com/department-of-veterans-affairs/va.gov-team/issues/62515) & [Wireframes](https://www.sketch.com/s/0e890de3-2530-4ee0-986e-cf0314334aec/p/6ECDF941-DF3B-4C1E-983D-1BA221ACF65C/canvas)
+	- Release Notes
+ 		- [10/12/2023 Release Note](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/checkin/release-plan/check-in-release-notes.md#10122023)
+   		- [10/11/2023 Release Note](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/checkin/release-plan/check-in-release-notes.md#10112023)
+		- [9/27/2023 Release Note](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/checkin/release-plan/check-in-release-notes.md#9272023)
+- Description
+	- Changes to Need Help
+	- Change alert on travel pages to additional info component
+
+#### Priority 9: Access regardless if link expired or have no appointments (TENTATIVE)
+- Allow Veterans to access Pre-Check-in & Check-in regardless if the link has expired or they have no appointments for today (can we re-generate the LoROTA entry for some limited time period? does this affect the ATO?)
 
 
 

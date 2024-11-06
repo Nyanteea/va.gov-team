@@ -1,5 +1,19 @@
 # VBA Regional Offices Product Outline 
 
+[Overview](#overview)
+
+[Problem statement](#problem-statement)
+
+[Description](#description)
+
+[Approach](#approach)
+
+[Assumptions](#assumptions-and-early-discussions)
+
+[MVP Scope](#mvp-scope)
+
+[Timeline](#timeline)
+
 ## Overview 
 VBA Regional Office sites will be modernized, similarly to the modernization of VAMC sites and Vet Center sites. Modernized VBA sites will leverage existing CMS design patterns, improve accessibilty, provide an efficient moblie experience, and give Veterans and beneficiaries seeking access to their benefits more consistent, accurate, and timely information.
 
@@ -40,19 +54,18 @@ This is the new VA.gov facility product for VA's Facilities that offer Benefits 
 - Like VAMCs, ROs are a network of facilities; the Regional Office is the parent facility, and other benefits facilities are children
 - VBA's facilities are unique because they provide VA benefits help for all three administrations (i.e., they will help you apply for health care and get burial benefits)
 
-**Business partners:**
-- J.R. Arce, Chief, Digital Media and Design, VBA Strategic Engagement (jeku.arce@va.gov)
-- Tanekwa Bournes, VBA Strategic Engagement & VBA facilities lead (tanekwa.bournes@va.gov) 
-- Kenyonna Power, VBA Strategic Engagement (kenyonna.power@va.gov)
-- Derek Hommema, VBA Office of Field Operations (Derek.Hommema@va.gov)
-- Brigette Murray, VBA Office of Field Operations (Brigette.Murray@va.gov)
+### **Business partners:**
+- Lew Boone, Interim Chief (9/1/2023), Digital Media and Design, VBA Strategic Engagement
+- Tanekwa Bournes, VBA Strategic Engagement & VBA facilities lead
+- Kenyonna Power, VBA Strategic Engagement 
+- Derek Hommema, VBA Office of Field Operations
+- Brigette Murray, VBA Office of Field Operations
 
-** VBA Stakeholders:**
-- Laura O'Shea, Office of Policy Overview at VBA (laura.oshea@va.gov)
-- Jamie Statton, Office of Policy Overview at VBA (jamie.statton@va.gov)
-- 
+### **VBA Stakeholders:**
+- Laura O'Shea, Office of Policy Overview at VBA 
+- Jamie Statton, Office of Policy Overview at VBA 
 
-## What we need to do
+## Approach
 - Research, design, and define the facilities hierarchical structure as it relates to Veteran needs and understanding
 - Research, design, and write new content/create content guidelines for field editors for location-specific content, for example "prepare for your visit" section and others
 - Research, design, and write new content/create content guidelines for national editors for national COPE content
@@ -65,16 +78,12 @@ This is the new VA.gov facility product for VA's Facilities that offer Benefits 
 - Identify current users of VBA_facilities CDW database, create sunset plan and deprecate VBA database
 
 ## Old/legacy Regional Office/benefits websites
-
 We need to reach parity with our new Regional Office/benefits products so we can turn off all the old sites.
-
 - Regional Office website: https://www.benefits.va.gov/ROWINSTONSALEM/index.asp
 - Facility Locator RO facility detail page: https://www.va.gov/find-locations/facility/vba_318
 - Facility Locator benefits facility detail page: https://www.va.gov/find-locations/facility/vba_318c
 
-
 ## Assumptions and early discussions
-
 - VBA want to adopt the same facility system product template as the new VAMC product
   - Like VAMCs, ROs are a network of facilities; the Regional Office is the parent facility, and other benefits facilities are children *and this structure is important for the Veteran* (if this is the case, then it needs to be represented hierarchically in the Facilities API and Drupal)
 - We need to design a Make An Appointment page that applies to all ROs
@@ -83,10 +92,10 @@ We need to reach parity with our new Regional Office/benefits products so we can
 - VBA's Veteran Readiness and Employment sites are both stand-alone but also often times located at VAMCs or Vet Centers(VocRehab is built into the VHA health services taxonomy for this reason)
   - We need to figure out the user flows into VocRehab facilies and services, since users will be able to get to them from a VAMC site, RO sites, and Facility Locator
 
+
 ## VBA Facility types
 
 The data call in August 2021 defined these as the different types of VBA Facilities:
-
 | VBA Facility type | Definition  |
 | --- | --- |
 | Regional Benefit Office | This is the main VBA facility of jurisdiction that provide a listing of all VA regional offices (RO), an email address for contacting the regional office director, and a listing of additional VA facilities located in each state. VA regional offices assist Veterans, Service Members and dependents with applying for benefits, compensation, education and training, Veteran readiness and employment, home loans, life insurance, pension, appeals, and other services. |
@@ -97,3 +106,10 @@ The data call in August 2021 defined these as the different types of VBA Facilit
 | Pre‐Discharge Site  | This facility is a joint VA and DOD location to file a claim for disability compensation up to 180 days prior to separation or retirement from active duty or full time National Guard or Reserve duty (Titles 10 and 32).  |
 | Seamless Transition Integrated Care Clinic (STICC)  | This facility is a transition clinic located in VHA facilities, there are VHA and VBA Rehab counselors as well as VBA Compensation and Benefits (Comp & Pen) personnel that assist transitioning servicemembers with benefit-related information. |
 
+
+# Initiatives
+* [Pilot MVP launch](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/facilities/regional-offices/initiatives/2023-2024-pilot-mvp#points-of-contact-from-vba-ro-pilot-locations)
+* [National Editor onboarding](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/facilities/regional-offices/initiatives/2024-national-mvp)
+
+# Incident response
+https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/facilities/facility-pages/technical-documentation.md#incident-response

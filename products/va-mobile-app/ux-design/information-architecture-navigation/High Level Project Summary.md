@@ -2,8 +2,7 @@
 
 # **VA Mobile App: Information Architecture & Navigation - High Level Project Summary**
 
-
-This summary describes the background & motivation, purpose & research goals, research questions and planned process/methods for the VA Mobile App IA & Navigation project (part of [VA Mobile app Redesign](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/features/design/redesign-initiative-brief.md)).
+This summary describes the background & motivation, purpose & research goals, research questions and planned process/methods for the [VA Mobile App IA & Navigation project](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/va-mobile-app/features/nav-and-IA-updates).
 For a quick overview, see the following slide deck: [VA Mobile App - IA & Navigation Project Process Overview](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/ux-design/information-architecture-navigation/2023%20VA%20Mobile%20App%20-%20IA%20%26%20Navigation%20Project%20Summary.pdf)
 
 
@@ -136,22 +135,22 @@ The purpose of this work is to inform the information architecture, content and 
 For detailed protocol on each part of the study, see: 
 
 * **VA Mobile App Information Architecture Research - Phase I - IA Research:**
-    * [Findings for VA Mobile App IA Research: Open Card Sort - Part 1 of 2](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/ux-research/information-architecture/open%20card%20sort/Card-Sort-Research-Plan.md) (October 2021)
-    * [Findings for VA Mobile App IA Research: Closed Card Sort - Part 2 of 2](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/ux-research/information-architecture/closed%20card%20sort/closed-card-sort-research-plan.md) (February/March 2022)
+    * [Findings for VA Mobile App IA Research: Open Card Sort - Part 1 of 2](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/ux-research/information-architecture/open%20card%20sort/Card-sort-research-report.md) (October 2021)
+    * [Findings for VA Mobile App IA Research: Closed Card Sort - Part 2 of 2](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/ux-research/information-architecture/closed%20card%20sort/closed-card-sort-research-report.md) (February/March 2022)
     * [VA Mobile App - Future state sitemap/flow diagram](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/ux-design/information-architecture/archive/Detailed%20sitemap%20(future%20state%209-30-22)_2023-02-06_16-36-53.png) (Sep 2022)
     
 * **VA Mobile App Information Architecture Research - Phase II - Navigation Model Exploration & Implementation**
   * **Exploration**
       * [VA Mobile Comparative Analysis: Navigation UI Patterns](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/ux-design/information-architecture-navigation/comparative-analysis/README.md) (March 2022)
-      * [Success Criteria, Nav Model Exploration, Audit & Refinement](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/va-mobile-app/ux-design/information-architecture-navigation/success-criteria-nav-model-audit) (April-June 2022)
-      * [2022 - VA Mobile App - Navigation UI Direction Recommendation - PO presentation](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/ux-design/information-architecture-navigation/success-criteria-nav-model-audit/2022%20-%20VA%20Mobile%20App%20-%20Navigation%20UI%20Direction%20Recommendation%20PO%20presentation.pdf) (May 2022)
+      * [VA Mobile App - Success Criteria, Nav Model Exploration, Audit & Refinement](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/va-mobile-app/ux-design/information-architecture-navigation/success-criteria-nav-model-audit) (April-June 2022)
+      * [VA Mobile App - Navigation UI Direction Recommendation - PO presentation](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/ux-design/information-architecture-navigation/success-criteria-nav-model-audit/2022%20-%20VA%20Mobile%20App%20-%20Navigation%20UI%20Direction%20Recommendation%20PO%20presentation.pdf) (May 2022)
   * **Implementation**
       * [VA Mobile App - Screen Roundup (mural)](https://app.mural.co/invitation/mural/adhoccorporateworkspace2583/1644341290076?sender=u28718b63c8993f515e0b2240&key=74759cd5-45ad-43d9-aee3-a58fb949aa73) (February 2022)
-      * [Screen-by-screen audit of changes: VA Mobile App- IA Audit](https://docs.google.com/spreadsheets/d/1nLZdbcZS2nAnsVz12TwsHF2OU5nNeWZoJ0bSFuiKF_A/edit#gid=0)
-      * [High fidelity screen templates for navigation model - Figma](https://www.figma.com/file/cdp7Be4UdYesq9fXeqaOgt/%F0%9F%9A%A2-Navigation2.0---ScreenTemplates---Shipped---VAMobile?node-id=0%3A1&t=MLR0Wl9QqzHyZTRd-1)
+      * [VA Mobile App - Screen-by-screen audit of changes: IA Audit spreadsheet](https://docs.google.com/spreadsheets/d/1nLZdbcZS2nAnsVz12TwsHF2OU5nNeWZoJ0bSFuiKF_A/edit#gid=0)
+      * [VA Mobile App - High fidelity screen templates for navigation model - Figma](https://www.figma.com/file/cdp7Be4UdYesq9fXeqaOgt/%F0%9F%9A%A2-Navigation2.0---ScreenTemplates---Shipped---VAMobile?node-id=0%3A1&t=MLR0Wl9QqzHyZTRd-1) (October 2022)
  
 * **VA Mobile App Information Architecture Research - Phase III - Evaluative Research** 
-    *  [Findings for VA Mobile App IA & Navigation Research: Usability Study (Low-fi)](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/ux-research/usability-testing/new%20navigation%20usability/usability-findings.md) (August-September 2022)
+    *  [VA Mobile App - Findings for VA Mobile App IA & Navigation Research: Usability Study (Low-fi wireframe concept)](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/va-mobile-app/ux-research/usability-testing/new%20navigation%20usability/usability-findings.md) (August-September 2022)
   
 
 
@@ -163,5 +162,5 @@ For detailed protocol on each part of the study, see:
   * Navigation model explorations & audit: Holly Collier ([holly.collier@adhocteam.us](mailto:holly.collier@adhocteam.us)) and Melissa Lefevre, with Mobile UX team
   * Sitemap: Holly Collier ([holly.collier@adhocteam.us](mailto:holly.collier@adhocteam.us))
   * High level navigation model wireframes & prototype: Holly Collier ([holly.collier@adhocteam.us](mailto:holly.collier@adhocteam.us))
-  * High fidelity screen templates for navigation model: Lauren Russell ([lauren.russell@adhocteam.us](mailto:lauren.russell@adhocteam.us))
+  * High fidelity visual design for screen templates: Lauren Russell ([lauren.russell@adhocteam.us](mailto:lauren.russell@adhocteam.us))
 

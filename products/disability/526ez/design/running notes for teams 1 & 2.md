@@ -1,5 +1,153 @@
 # Running Notes for Design & Research Teams 1 & 2 (T-Rex & Carbs)
 
+## 10/18/23
+NOTE: Running notes has been moved to this document: https://docs.google.com/document/d/1Z9syIZoV8ndQ8eBIIDYA8Vl3-ZyfMLnLnBYqKISpOs8/edit
+
+
+## 9/27/23
+Agenda
+- Sitemap walkthrough
+- Data Research Plan Update and moving forward
+- Discuss approach to organizing the data (which fields are most important? how are we selecting which pages to include?) 
+
+  
+
+## 9/21/23
+Attendees: Kate, Julie, Nichole, Lydia and Evelyn
+
+Agenda
+- Moving forward on small research topics from Shannon (What's the plan and can we collaborate)
+- Sprint Updates Team 1 & 2
+
+Notes:
+- Moving forward on small research topics from Shannon (What's the plan and can we collaborate)
+- Team 2 was excited about the shadowing research because we would have a level of interaction and be able to spend longer sessions with Veterans.  Worried about whether this will help us prioritize our backlog
+- 4142 feels like an emerging priority for Team 2
+- Team 1
+- 4142 seems like it's a good place to move through the Collaborative Cycle. Likes the idea of doing the shadow research and working together more tightly
+- Other research topics mentioned by Shannon
+- ITF
+- Form Abandonment and Evidence (Shadowing)
+- Team 1 wants to collaborate on shadowing.  
+- Sounds like we have the go head to work as a unit on research 
+- Julie has started to draft the research plan.  Could we do multiple things at once 
+- Team 1 is working on TE and intro pages for design
+- Medailla survey could take about a week
+- Team 1 and 2 (Julie, Everyln, and Nichole) will work on the Research Plan for Shadowing
+- Team 1 meeting with Shannon on 4142 on Friday to get clarity on how to move forward, wireframe, and research and how it relates to other forms.
+- News on reprioritization: There will be a few sprints before it happens or it will happen in November
+- Is there some research that can help inform prioritization because the conversation may lead to passion projects and tech debt
+- Shadowing and Medallia Survey Data to help us prioritization
+- Start with the summary pages and the review and submit page because those might be times when the Veteran is thinking retrospectively 
+- Could also take a smaller chunk of time to look at the survey
+- Not sure if we can do deep on shadowing data
+- Leslie/ Employee Experience was working on shadowing.  Caroline Due was the one who responded
+- Lydia wants to do a Sitemap recording.  
+- Need more time to chat before we talk to Shannon
+
+To Do
+- Team 1: Get more insight for the Employee Experience team about shadowing (if they have done it, where is the research, etc)
+- Team 2: Draft research plan for Shadowing 
+- Find a meeting time to determine our next step as a team
+
+  FYI- Off-sites
+- Friends from the City Offsite Oct 9- 13
+- Coforma Offsite: Oct 23-27
+
+  
+
+
+
+
+
+
+
+
+## 9/13/23
+Attendees: Kate, Julie, Nichole, Lydia, Evelyn, and Rakshinda
+
+Agenda
+- Retrospective on toxic exposure research collaboration 
+  
+## 9/7/23- cancelled
+Attendees:
+
+Agenda
+
+## 8/24/23
+
+Attendees: Kate, Julie, Nichole, Lydia and Evelyn
+
+Agenda
+Error Matrix Discussion
+- Nichole will Slack Lydia to connect about the Error message and learn more context
+
+Roadmap/ Moving forward/ collaboration
+- Team 2 is working on a roadmap with stakeholders
+- Feels of working on a lot of tech debt via bug fixes and migration
+- Brainstorm for getting others on board with research- Weekly post of user questions
+
+## 8/17/23
+
+Attendees:
+
+Agenda
+-Research session questions (Kate)
+
+## 8/10/23
+
+Attendees: Kate, Julie, Nichole, and Lydia
+
+Agenda
+Review and Submit Sketch Updates
+- We learned that many items in Sketch are not customizable
+- Possible flow change, but on pause until Submission page work is completed
+Error message and analytics tickets
+- Can close tickets in content discovery
+- Prioritize tickets from Nyantee
+  
+Upcoming toxic exposure research
+- TE research interviews will begin August 21-27
+- Nichole will work with Team 1 to moderate interviews for morning sessions
+
+Misc News
+- New researcher will be joining Team 1 on Aug 15 to help with research
+
+## 8/3/23- cancelled
+
+Attendees:
+
+Agenda
+- Project Updates
+## 7/27/23
+
+Attendees:Kate, Julie, & Nichole
+
+Agenda
+- Team 1 Sprint Updates and Team Member update
+- Team 2 Sprint Updates
+- Collaboration opportunities (TE Research)
+- Also research to learn more about TE
+
+    
+## 7/20/23
+Attendees: Nyantee, Kate, Julie, Nichole
+
+Agenda
+- Team 1 Upcoming Sprint Goals
+- TE updates
+- Team 1 & 2 Collaboration
+NOTES
+
+Team 1 Upcoming Sprint Goals
+- Team 1 will be working on the following tickets for the upcoming sprint (Sprint 8): Ticket 62295, 61915, and 62296.
+
+TE Updates
+- Julie and Nyantee have a meeting today to discuss how to move forward on the TE project
+- Kate now has access to Google Docs and Sketch files for TE
+- Nyantee will be discussing objectives and what should be tested (mobile vs desktop)
+- Solutions workshop will be scheduled for next week. This will help inform the work we are doing and how we can collaborate
+  
 ## 7/13/23
 Attendees: Nyantee, Kate, Julie, Nichole
 

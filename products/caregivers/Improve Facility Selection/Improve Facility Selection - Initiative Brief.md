@@ -95,27 +95,30 @@
 
 
 #### Baseline KPI Values
-- Number of online Caregiver applications filled out per month:
+- Number of online Caregiver applications filled out per month
+     - Using the same timeframe of Jan 1, 2022 through Jan 25, 2023, there were about 77,000 applications submitted.
 
 ### Objectives and Key results (OKRs)
-_What are the measurable targets you're aiming for that delivers value for Veterans?_
 
-- Objective: Make it easier for Veterans with representatives to fill out the online form
-  - Key result: number of applications that are not misrouted or delayed (obtained from CSP leadership)
+### Objective: Make it easier for Veterans with representatives to fill out the online form
+#### Key result: Reduce the number of applications that are rerouted (obtained from CSP leadership)
+- From Jan 1, 2022 through Jan 25, 2023, there were 5,496 CARMA cases rerouted to a different facility.
+   - At this time, there is no simple way to determine whether the case was rerouted at the Veteran/Caregiver request or due to having a non-caregiver supported facility on the form.
+- Data Source: Caregiver Stakeholder team and [Datadog Dashboard](https://vagov.ddog-gov.com/dashboard/p5g-fys-epz/1010-health-apps?fromUser=false&fullscreen_end_ts=1730229097128&fullscreen_paused=false&fullscreen_refresh_mode=sliding&fullscreen_section=overview&fullscreen_start_ts=1730225497128&fullscreen_widget=1652960129845848&refresh_mode=sliding&from_ts=1730224696206&to_ts=1730228296206&live=true)
  
-|Invalid/Duplicate/Created in error| Baseline (Jan-Feb 2023)| Target | 1 Month after launch|
+|Applications | Monthly Average Baseline (Jan 2022-Jan 2023)| Target | 1 Month after launch|
 |--------|-----------------------|----------|--------------------|
-|Total Apps (rounded) | 960 | TBD | TBD |
-|Total Online Apps (rounded) | 520 | TBD | TBD |
+|Total Apps Rerouted | 423 | TBD | TBD |
+|Total Apps Submitted | 5,923 | TBD | TBD |
 
 
+#### Key result: Maintain or reduce the amount of time a user selects a facility
+- Data Source: [Google Analytics - CG Facility page views & time](https://analytics.google.com/analytics/web/#/analysis/p419143770/edit/8un9wi5nSN-WZ-KqWHHBPA)
 
-  - Key result: Facilities list is complete, accurate and up to date
-       - [JSON static file](https://github.com/department-of-veterans-affairs/vets-json-schema/blob/8cdc5f35ad743af51170adad84b92a8b49504bdf/dist/caregiverProgramFacilities.json) contained 142 facilities
-       - Facilities API contains **1,252** facilities
-  - 
-  
-
+|Average time on page |Monthly Average Baseline (Jan-Dec 2023)| Target | 1 Month after launch|
+|--------|-----------------------|----------|--------------------|
+|Search page| 55 seconds |TBD|TBD|
+|Confirmation page |NEW|TBD|TBD|
 
 ---
 
@@ -130,7 +133,7 @@ _What are the measurable targets you're aiming for that delivers value for Veter
 - **Usability Risks** (can people figure out how to use it):
   - Applicants may not understand the reason for selecting a facility.
   - Applicants may not understand how to use the facility selector/search.
-  - Applicants may be given too much information about facility, location, and so on and feel overwhelmed when making a decision.
+  - Applicants may be given too much information about facility, location, and Caregiver support association and feel overwhelmed when making a decision.
 
 - **[Technical] Feasibility Risks** (can we build it with available tech/data):
   - API dependencies may cause unplanned outages, causing the facility selector page to be unresponsive
@@ -144,7 +147,7 @@ _What are the measurable targets you're aiming for that delivers value for Veter
   - Revisit UI against the current Facilities selection page on VA.gov and other private sector locator search pages
   - Condust research/usability sessiosn with Veterans to determine the best, easiest to use design
   - Redesign facility selection page
-    - Provide applicants with an idea of location/distance of any given facility to ensure they can select the one that is correct for them.
+    - Provide applicants with the option to search by city, state or postal code of any given facility to ensure they can select the one that is correct for them.
 --- 
 
 ### Outstanding Questions
@@ -162,7 +165,7 @@ _What are the measurable targets you're aiming for that delivers value for Veter
 ### Collaboration Cycle
 
 - [Kickoff ticket #51980](https://app.zenhub.com/workspaces/10-10-health-apps-5fff0cfd1462b6000e320fc7/issues/gh/department-of-veterans-affairs/va.gov-team/51980)
-  - [ ] Design Intent 3/20/2023
+  - [x] Design Intent 3/20/2023
   - [ ] Research Review
   - [ ] IA Review
   - [ ] Midpoint Review
@@ -173,7 +176,7 @@ _What are the measurable targets you're aiming for that delivers value for Veter
 ### Incident Response Info
 - The 1010CG form is currently in production
 - We are going to begin calling an existing API (Facilities API)
-- We are changing how the facility list is retrieved (MORE INFO WILL BE NEEDED HERE)
+- XXXXXX We are changing how the facility list is retrieved (MORE INFO WILL BE NEEDED HERE)
 - 1010CG [Datadog monitoring dashboard](https://vagov.ddog-gov.com/dashboard/p5g-fys-epz/1010-health-apps?from_ts=1657212129534&to_ts=1657215729534&live=true)
 
 ### Timeline 
@@ -218,7 +221,7 @@ _What are the measurable targets you're aiming for that delivers value for Veter
 <details>
   
 - Office/Department: OCTO-DE
-- Contact(s): Patrick Bateman, Katherine Lawyer, Mark Dewey
+- Contact(s): Patrick Bateman, Lois Lewis
  
 </details>
 

@@ -1,6 +1,6 @@
 # Connected Apps Product Outline
 
-**Last updated: September 6, 2022**
+**Last updated:** May 10, 2024 - added an additional slack channel
      
 ## Table of Contents
 
@@ -15,7 +15,7 @@
 
 
 ## POCs
-- **Slack channel**: [#accountexp-authexp](https://dsva.slack.com/channels/accountexp-authexp); [#vaapi-connected-apps](https://dsva.slack.com/channels/vaapi-connected-apps)
+- **Slack channel**: [#accountexp-authexp](https://dsva.slack.com/channels/accountexp-authexp); there are two private channels for connected apps, one that includes Lighthouse [#vaapi-connected-apps](https://dsva.slack.com/channels/vaapi-connected-apps), and a 'legacy' channel that does not include Lighthouse contacts [#connected_apps](https://dsva.slack.com/archives/C0136FJV5R9)
 - [The frontend for this feature is currently managed by the VA.gov profile team](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/profile/README.md#roles).
 - The backend for this feature is maintained by the Lighthouse team, with POs being Dave Mazik and Carey Otto. They can be reached in Slack via [#vaapi-connected-apps](https://dsva.slack.com/channels/vaapi-connected-apps).
 
@@ -34,9 +34,8 @@ As a user I need to:
 
 ## Projects
 
-|Project or enhancement|Launch/Completion date|
-|----|----|
-|[Combine profile and account](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/identity-personalization/profile/Combine%20Profile%20and%20Account#readme)| September 2020|
+[For a list of current and past projects, please refer to the Profile section outline](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/profile/README.md#projects).
+
 
 ## Analytics
 - [GA dashboard for connected apps](https://analytics.google.com/analytics/web/#/dashboard/-7uuXRP8QJOLgqwi7s5OOg/a50123418w177519031p176188361/)
@@ -54,8 +53,8 @@ See [profile product outline](https://github.com/department-of-veterans-affairs/
 ## Frontend
 
 ## Design and UX
-- [Sketch files](https://www.sketch.com/s/479aa6d6-a7a7-4d82-acf1-c06a6699655e)
+- [Figma files onboarding early 2024](https://www.figma.com/file/eMR2XSTGnWQgF2YEphWK8O/Profile---Connected-Apps?type=design&node-id=0-1&mode=design&t=WTDFhunwQn2SA1Ec-0)
 - [Use cases](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/identity-personalization/profile/connected-apps/use-cases)
 
 ### Flow diagrams
-- [View and disconnect apps](https://www.sketch.com/s/479aa6d6-a7a7-4d82-acf1-c06a6699655e/p/1E65D486-EF4E-401C-AA44-37082963EA88/canvas)
+- The [mobile page of the design file](ttps://www.figma.com/file/eMR2XSTGnWQgF2YEphWK8O/Profile---Connected-Apps?type=design&node-id=0-1&mode=design&t=WTDFhunwQn2SA1Ec-0) includes the user flow.

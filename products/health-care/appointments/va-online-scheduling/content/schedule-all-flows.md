@@ -9,9 +9,7 @@ These pages start all scheduling flows
 
 **NAVIGATION**
 
-New URL: `https://va.gov/my-health/appointments/schedule/type-of-care`
-
-Current URL: `https://va.gov/health-care/schedule-view-va-appointments/appointments/new-appointment`
+URL: `https://va.gov/my-health/appointments/schedule/type-of-care`
 
 Page title: `[Page Header] | Veterans Affairs`
 
@@ -66,9 +64,7 @@ Find a VA location
 
 **NAVIGATION**
 
-New URL: `https://va.gov/my-health/appointments/schedule/sleep-care`
-
-Current URL: `https://va.gov/health-care/schedule-view-va-appointments/appointments/new-appointment/choose-sleep-care`
+URL: `https://va.gov/my-health/appointments/schedule/sleep-care`
 
 Page title: `[Page Header] | Veterans Affairs`
 
@@ -81,7 +77,13 @@ Breadcrumb: `VA.gov home > My HealtheVet > Appointments > [Page Header]`
 
 **PAGE CONTENT**
 
-[TBD]
+```
+{Option} Continuous Positive Airway Pressure (CPAP)
+This includes an office visit to set up or fix your CPAP machine. You shouldn’t book a CPAP appointment if you want to schedule a sleep study or if you have an undiagnosed sleep issue.
+
+{Option} Sleep medicine and home sleep testing
+This includes an office visit for the diagnosis and treatment of sleep problems, such as difficulty sleeping or breathing, snoring, teeth grinding, and jaw clenching. You can also choose this type of appointment if you want to schedule a home or lab sleep study.
+```
 
 **PROGRESS BUTTONS**
 
@@ -95,9 +97,7 @@ Breadcrumb: `VA.gov home > My HealtheVet > Appointments > [Page Header]`
 
 **NAVIGATION**
 
-New URL: `https://va.gov/my-health/appointments/schedule/eye-care`
-
-Current URL: `https://va.gov/health-care/schedule-view-va-appointments/appointments/new-appointment/choose-eye-care`
+URL: `https://va.gov/my-health/appointments/schedule/eye-care`
 
 Page title: `[Page Header] | Veterans Affairs`
 
@@ -110,7 +110,13 @@ Breadcrumb: `VA.gov home > My HealtheVet > Appointments > [Page Header]`
 
 **PAGE CONTENT**
 
-[TBD]
+```
+{Option} Optometry
+This includes routine eye exams, preventive vision testing and treatment for conditions like glaucoma. Optometrists also can provide prescriptions for eyeglasses and other assistive devices.
+
+{Option} Ophthalmology
+You can schedule an appointment with an ophthalmology specialist to diagnose and provide medical and surgical care for conditions that affect your eyes—like cataracts, glaucoma, macular degeneration, and diabetic retinopathy.
+```
 
 **PROGRESS BUTTONS**
 
@@ -124,9 +130,7 @@ Breadcrumb: `VA.gov home > My HealtheVet > Appointments > [Page Header]`
 
 **NAVIGATION**
 
-New URL: `https://va.gov/my-health/appointments/schedule/audiology-care`
-
-Current URL: `https://va.gov/health-care/schedule-view-va-appointments/appointments/new-appointment/audiology`
+URL: `https://va.gov/my-health/appointments/schedule/audiology-care`
 
 Page title: `[Page Header] | Veterans Affairs`
 
@@ -139,7 +143,13 @@ Breadcrumb: `VA.gov home > My HealtheVet > Appointments > [Page Header]`
 
 **PAGE CONTENT**
 
-[TBD]
+```
+{Option} Routine hearing exam
+This includes an office visit for a hearing exam and an evaluation using non-invasive tests to check your hearing and inner ear health. A routine exam is not meant for any new or sudden changes with your hearing or ears.
+
+{Option} Hearing aid support
+This includes an office visit for Veterans who already have a hearing aid and need assistance with this device. This visit is for troubleshooting or adjusting a hearing aid to improve performance. A hearing aid support visit is not for initial evaluation to obtain a hearing aid.
+```
 
 **PROGRESS BUTTONS**
 
@@ -148,14 +158,12 @@ Breadcrumb: `VA.gov home > My HealtheVet > Appointments > [Page Header]`
 
 ---
 
-## Choose location type
+## Choose VA or CC facility
 
 
 **NAVIGATION**
 
-New URL: `https://va.gov/my-health/appointments/schedule/facility-type`
-
-Current URL: `https://va.gov/health-care/schedule-view-va-appointments/appointments/new-appointment/choose-facility-type`
+URL: `https://va.gov/my-health/appointments/schedule/facility-type`
 
 Page title: `[Page Header] | Veterans Affairs`
 
@@ -168,7 +176,15 @@ Breadcrumb: `VA.gov home > My HealtheVet > Appointments > [Page Header]`
 
 **PAGE CONTENT**
 
-[TBD]
+```
+You're eligible to see either a VA provider or community care provider for this type of care. (*Required)
+
+{Option} VA medical center or clinic
+Go to a VA medical center or clinic for this appointment
+
+{Option} Community care facility
+Go to a community care facility near your home
+```
 
 **PROGRESS BUTTONS**
 

@@ -1,5 +1,5 @@
 # Contact information: address not recognized as entered
-**Last updated: February 9, 2023**
+**Last updated: February 14, 2024**
 
 If a user changes their address from the VA.gov profile and that address isn’t recognized by the U.S. Postal Service (USPS), they’ll be provided with a suggestion or an option to:
 - use the address as entered
@@ -17,33 +17,38 @@ We’re aware of accessibility issues with the current implementation, and [prop
 
 
 ### Address can’t be confirmed with USPS, and a suggested address is found.
-- Warning alert appears under address section label (mailing or home)
 - User is presented with suggested and entered address as radio button options
-- They can select one and choose the “Use this address” button to save their changes, or
+- They can select one and choose the “Update” button to save their changes, or
 - They can press cancel, and will be returned to read mode
-- [Desktop mock-up](https://www.sketch.com/s/59857eb5-d9f9-4145-99d3-d9a1de2d0655/a/rbJ5V77)
-- [Mobile mock-up](https://www.sketch.com/s/59857eb5-d9f9-4145-99d3-d9a1de2d0655/a/4a3Wp3q)
+- [Desktop mock-up](https://www.figma.com/file/bFdl7MEIda4ExZIQuot84r/Profile---Contact-Information?type=design&node-id=0-848&mode=design&t=6iSkKX2l8PqjFaHd-11)
+- [Mobile mock-up](https://www.figma.com/file/bFdl7MEIda4ExZIQuot84r/Profile---Contact-Information?type=design&node-id=0-176&mode=design&t=6iSkKX2l8PqjFaHd-11)
 
-### Address and/or unit number can’t be confirmed with U.S. Postal Service (USPS), and a suggestion is not found.
-- Warning alert appears under address section label (mailing or home), prompting user to review the information they entered
+### Address can’t be confirmed with U.S. Postal Service (USPS), and a suggestion is not found.
 - User is presented with the address they entered
-- User can select “Use this address” button to confirm what they entered is correct, or
-- they can select “edit your address” and return to edit mode
+- User can select the primary button to confirm what they entered is correct, or
+- they can select the secondary button and return to edit mode
 - They can press cancel, and will be returned to read mode
-- [Desktop mock-up](https://www.sketch.com/s/59857eb5-d9f9-4145-99d3-d9a1de2d0655/a/nRj5oKd)
-- [Mobile mock-up](https://www.sketch.com/s/59857eb5-d9f9-4145-99d3-d9a1de2d0655/a/3OrW1bw)
+- [Desktop mock-up](https://www.figma.com/file/bFdl7MEIda4ExZIQuot84r/Profile---Contact-Information?type=design&node-id=0-900&mode=design&t=6iSkKX2l8PqjFaHd-11)
+- [Mobile mock-up](https://www.figma.com/file/bFdl7MEIda4ExZIQuot84r/Profile---Contact-Information?type=design&node-id=0-268&mode=design&t=6iSkKX2l8PqjFaHd-11)
 
 ### Address is missing a unit number
-- Warning alert appears under address section label (mailing or home), prompting user to review the information they entered and check for a unit number
 - User is presented with the address they entered
-- User can select “Use this address” button to confirm what they entered is correct, or
-- they can select “edit your address” and return to edit mode
+- User can select the primary button to confirm what they entered is correct, or
+- they can select the secondary and return to edit mode
 - They can press cancel, and will be returned to read mode
-- [Desktop mock-up](https://www.sketch.com/s/59857eb5-d9f9-4145-99d3-d9a1de2d0655/a/qeJ4aVV)
-- [Mobile mock-up](https://www.sketch.com/s/59857eb5-d9f9-4145-99d3-d9a1de2d0655/a/WKmL09n)
+- [Desktop mock-up](https://www.figma.com/file/bFdl7MEIda4ExZIQuot84r/Profile---Contact-Information?type=design&node-id=0-885&mode=design&t=6iSkKX2l8PqjFaHd-11)
+- [Mobile mock-up](https://www.figma.com/file/bFdl7MEIda4ExZIQuot84r/Profile---Contact-Information?type=design&node-id=0-226&mode=design&t=6iSkKX2l8PqjFaHd-11)
 
+### Unit number can’t be confirmed with U.S. Postal Service (USPS), and a suggestion is not found.
+- User is presented with the address they entered
+- User can select the primary button to confirm what they entered is correct, or
+- they can select the secondary button and return to edit mode
+- They can press cancel, and will be returned to read mode
+- [Desktop mock-up](https://www.figma.com/file/bFdl7MEIda4ExZIQuot84r/Profile---Contact-Information?type=design&node-id=0-870&mode=design&t=6iSkKX2l8PqjFaHd-11)
+- [Mobile mock-up](https://www.figma.com/file/bFdl7MEIda4ExZIQuot84r/Profile---Contact-Information?type=design&node-id=0-178&mode=design&t=6iSkKX2l8PqjFaHd-11)
+  
 ## Analytics
-Our [address validation dashboard](Redirecting…) has metrics related to this use case.
+Our [address validation dashboard](https://analytics.google.com/analytics/web/#/dashboard/pq_-PrkvQleUdCBbV7eq7Q/a50123418w177519031p176188361/) has metrics related to this use case.
 
 ## Codes
 N/a
@@ -58,7 +63,7 @@ N/a
 Washington, DC 20010
 5. Click update
 
-### Address and/or unit number can’t be confirmed with U.S. Postal Service (USPS), and a suggestion is not found.
+### Address can’t be confirmed with U.S. Postal Service (USPS), and a suggestion is not found.
 1. Log into staging.va.gov with vets.gov.user+41@gmail.com ([staging user list](https://github.com/department-of-veterans-affairs/va.gov-team-sensitive/blob/master/Administrative/vagov-users/mvi-staging-users.csv))
 2. Navigate to the [contact information section](https://staging.va.gov/profile/contact-information), and 
 3. Click edit on either address section
@@ -73,3 +78,13 @@ Washington, DC 20010
 600 S. Michigan Ave
 Chicago, IL 60610
 5. Click update
+
+### Unit number can’t be confirmed with U.S. Postal Service (USPS), and a suggestion is not found.
+1. Log into staging.va.gov with vets.gov.user+41@gmail.com ([staging user list](https://github.com/department-of-veterans-affairs/va.gov-team-sensitive/blob/master/Administrative/vagov-users/mvi-staging-users.csv))
+2. Navigate to the [contact information section](https://staging.va.gov/profile/contact-information), and 
+3. Click edit on either address section
+4. Use the following address: 
+600 S. Michigan Ave
+B
+Chicago, IL 60610
+6. Click update

@@ -8,37 +8,57 @@ VA Form 20-0996
 
 Use this form if you disagree with our decision on your claim and want a higher-level reviewer to review your case again. You can’t submit any new evidence with a Higher-Level Review.
 
-Answer a question to get started.
+ <details>
+  <summary>What are other decision review options?(expand)_</summary>
+  
+If you don't think this is the right form for you, find out about other decision review options.
 
-### What type of claim are you requesting a Higher-Level Review for? 
+[Learn about choosing a decision review option](https://www.va.gov/resources/choosing-a-decision-review-option/)
 
-* Disability compensation claim
-* A claim other than disability compensation
+</details> 
+
+## What type of claim are you requesting a Higher-Level Review for? 
+
+* Disability compensation
+* Another type of claim (not a disability claim)
+
+**Continue**
  
 ## Need help?
 If you have questions or need help filling out this form,  call our MYVA411My V. A. 4 1 1. main information line at 800-698-2411 and select 0. We’re here 24/724 hours a day, 7 days a week.
 
 If you have hearing loss, call TTY: 711.
+
+ERROR: You must choose a claim type
+
+---
+
+# Higher Level Reviewer (HLR) Content Source of Truth
+**SIGNED OUT**
  
- <details>
-  <summary>**SELECTED**_:Disability compensation claim (expand)_</summary>
+# Request a Higher-Level Review
+VA Form 20-0996
+
+## Requesting a Higher-Level Review if it isn’t for a disability
+
+We can accept online Supplemental Claims only for disability claims at this time. For other types of claims, you’ll need to fill out and submit VA Form 20-0995 by mail or in person.
+
+Send the completed form to the benefit office that matches the benefit type you select on the form.Answer a question to get started.
   
-You can request a Higher-Level Review online using **VA Form 20-0996**.
+[Find the address for mailing your form](https://staging.va.gov/decision-reviews/higher-level-review/#find-addresses-for-other-benef-8622)
 
-[Request a Higher-Level Review online](https://staging.va.gov/decision-reviews/higher-level-review/request-higher-level-review-form-20-0996/introduction)
+[Download VA Form 20-0996 (PDF)](https://www.vba.va.gov/pubs/forms/VBA-20-0996-ARE.pdf) 
 
-[Learn about other ways you can request a Higher-Level Review](https://staging.va.gov/decision-reviews/higher-level-review/) 
+If you don't think this is the right form for you, find out about other decision review options.
 
-</details> 
- 
-<details>
-  <summary>**SELECTED**_:A claim other than disability compensation (expand)_</summary>
-  
-You’ll need to fill out and submit VA Form 20-0996 by mail or in person. [Send the completed form to the benefit office](https://staging.va.gov/decision-reviews/higher-level-review/#find-addresses-for-other-benef-8622) that matches the benefit type you select on the form.
+[Learn about choosing a decision review option](https://www.va.gov/resources/choosing-a-decision-review-option/)
 
-[Download VA Form 20-0996 PDF (1.5MB)](https://www.vba.va.gov/pubs/forms/VBA-20-0996-ARE.pdf) 
-</details>
+## Need help?
+If you have questions or need help filling out this form,  call our MYVA411My V. A. 4 1 1. main information line at 800-698-2411 and select 0. We’re here 24/724 hours a day, 7 days a week.
 
+If you have hearing loss, call TTY: 711.
+
+---
 
 # Request a Higher-Level Review
 VA Form 20-0996
@@ -621,27 +641,27 @@ _Finish this application later_
 # Request a Higher-Level Review
 VA Form 20-0996 (Higher-Level Review)
 
-_Success alert_
+Success alert:
 
-## You’ve successfully submitted your request
-We’ll review your request. We may contact you for more information or other documents.  print this page for your records.
+    Header: We’ve received your Higher-Level Review request
+    Body: After we’ve completed our review, we’ll mail you a decision packet with the details of our decision.
 
-### Request a Board Appeal (Form 10182)
+### Your information for this claim
 
-#### Your NAME
+#### Your name
 Veteran Name 
 
-#### Date submitted
+#### Date you filed your claim
 
 Month Day, Year
 
-#### Issue(s) submitted
+#### Issue(s) for review
 
-* My Issue
+• My Issue
 
-* Another Issue
+• Another Issue
 
-Button: [Print this for your records]
+Button: **Print this for your records**
 
 ### After you request a decision review
 
@@ -651,7 +671,7 @@ When we’ve completed your review, we’ll mail you a decision packet that incl
 
 You don’t need to do anything unless we send you a letter asking for more information. If we schedule any exams for you, be sure not to miss them.
 
-If you requested an appeal and haven’t heard back from us yet,  don’t request another appeal. Call us at 800-827-1000.
+If you requested an appeal and haven’t heard back from us yet,  don’t request another appeal. Call us at 800-827-1000 (TTY: 711).
 
 Button: [Check the status of your appeal]
 

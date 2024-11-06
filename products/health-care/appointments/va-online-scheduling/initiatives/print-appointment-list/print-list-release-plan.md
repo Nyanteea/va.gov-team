@@ -7,17 +7,36 @@
 ### Planning:
 - Desired date range or test duration: 1 week
 - Desired number of users: 3
-- How you'll recruit the right production test users: lorem ipsum
-- How you'll conduct the testing: lorem ipsum
-- How you'll give the test users access to the product in production w/o making it live on VA.gov: lorem ipsum
+- How you'll recruit the right production test users: Find veteran within the VA to test with
+- How you'll conduct the testing: Online meeting
+- How you'll give the test users access to the product in production w/o making it live on VA.gov: Enable feature flag for test user
 
-### Results:
-- Number of users: x
-- Number of bugs identified / fixed: x/x
-- Was the data submitted (if any) easy for VA to process?: yes/no, lorem ipsum
-- Types of errors logged: lorem ipsum
-- Any UX changes necessary based on the logs, or feedback on user challenges, or VA challenges? yes/no 
-- If yes, what: lorem ipsum
+### Week 1 Results: August 1-8, 2023
+- Number of users: 899
+- Total Events: 1,214
+- Number of bugs identified / fixed: 0/0
+- Was the data submitted (if any) easy for VA to process?: yes
+- Types of errors logged: No errors logged
+- Any UX changes necessary based on the logs, or feedback on user challenges, or VA challenges? no 
+- If yes, what: n/a
+
+### Week 2 Results: August 9-15, 2023
+- Number of users: 989
+- Total Events: 1,343
+- Number of bugs identified / fixed: 0/0
+- Was the data submitted (if any) easy for VA to process?: yes
+- Types of errors logged: No errors logged
+- Any UX changes necessary based on the logs, or feedback on user challenges, or VA challenges? no 
+- If yes, what: n/a
+
+### Week 3 Results: August 16-22, 2023
+- Number of users: 957
+- Total Events: 1,297
+- Number of bugs identified / fixed: 0/0
+- Was the data submitted (if any) easy for VA to process?: yes
+- Types of errors logged: No errors logged
+- Any UX changes necessary based on the logs, or feedback on user challenges, or VA challenges? no 
+- If yes, what: n/a
 
 ## Phase II: Staged Rollout (also known as unmoderated production testing)
 
@@ -38,7 +57,7 @@ Other exceptions to this requirement can be approved by DEPO VSP leads.
 ### Planning
 
 - Desired date range: 
-   - 08/23/2023
+   - 08/03/2023
 - How will you make the product available in production while limiting the number of users who can find/access it: 
    - N/A
 - What metrics-based criteria will you look at before advancing rollout to the next stage ("success criteria")?: 
@@ -66,7 +85,7 @@ _Test a small population of users to make sure any obvious bugs / edge cases are
 ## Go Live!
 
 ### Planning:
-- Desired date: 08/23/23
+- Desired date: 08/02/23
 - Post-launch KPI 1: xx lorem ipsum
 - Post-launch KPI 2: xx lorem ipsum
 - Post-launch KPI 3: xx lorem ipsum
